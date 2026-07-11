@@ -234,7 +234,11 @@ function generateMelody(durationSec, outPath) {
   // per video, so consecutive videos don't sound identical). Mixed quietly under the
   // narration later in the pipeline.
   const bgPath = path.join(WORK, 'bg.mp3');
-  if (C.musicFile && fs.existsSync(C.musicFile)) {
+  const musicOverride = process.env.MUSIC_FILE_OVERRIDE;
+  if (musicOverride && fs.existsSync(musicOverride)) {
+    fs.copyFileSync(musicOverride, bgPath);
+    console.log('Using MUSIC_FILE_OVERRIDE (reusing an exact saved melody).');
+  } else if (C.musicFile && fs.existsSync(C.musicFile)) {
     fs.copyFileSync(C.musicFile, bgPath);
     console.log('Using provided background music file.');
   } else {
@@ -394,12 +398,24 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
   // auto-shrink. Usually a single 4-5 word line; a shot's text may contain an
   // explicit line break (the CTA, or a sentence-ending remainder too short to stand
   // as its own line) — those render as 2 lines, which is fine.
-  const lead = '{\\an5\\pos(540,960)\\fad(120,60)}';
+  // punchier "edit"-style pop-in: starts at 72% scale and snaps to 100% over 140ms,
+  // combined with a fast fade, instead of a plain fade — reads as a beat-synced pop.
+  const lead = '{\\an5\\pos(540,960)\\fad(70,60)\\t(0,140,\\fscx100\\fscy100)\\fscx72\\fscy72}';
   const rtl = (t) => '‫' + t + '‬';
+  // a handful of emotionally loaded words get a gold highlight, like a stylized edit
+  // calling out the key word in each line (e.g. "gold", "broken", "valuable", "scar").
+  // root fragments, not exact words — Hebrew prefixes/suffixes (ל-, ב-, ו-, ה-, -ים,
+  // -ה) attach directly, so "לזהב"/"השברים" need substring matching, not equality.
+  const POWER_ROOTS = ['זהב', 'יקר', 'ערך', 'צלק', 'כישל', 'חזק', 'סדק', 'שבר', 'מוסת', 'מודגש'];
+  const GOLD = '&H0000D7FF';
+  const highlight = (line) => line.split(' ').map((w) => {
+    const bare = w.replace(/[.,!?"'׳״]/g, '');
+    return POWER_ROOTS.some((root) => bare.includes(root)) ? `{\\c${GOLD}}${w}{\\c&HFFFFFF&}` : w;
+  }).join(' ');
   const capEv = shots.map((sh) => {
     const body = sh.text.includes('\n')
-      ? stripEmoji(sh.text).split('\n').map((l) => rtl(l.trim())).join('\\N')
-      : rtl(sh.text);
+      ? stripEmoji(sh.text).split('\n').map((l) => rtl(highlight(l.trim()))).join('\\N')
+      : rtl(highlight(sh.text));
     return `Dialogue: 0,${tc(sh.start)},${tc(sh.end)},Def,,0,0,0,,${lead}${body}`;
   }).join('\n');
   // color 👇 emoji overlay during the CTA (last shot), if present

@@ -509,5 +509,22 @@
     ],
     "fear": { "en": "Every hour lost to mindless scrolling is an hour that never comes back, and your future self will feel the absence.", "he": "כל שעה שאבדה לגלילה חסרת מחשבה היא שעה שלא חוזרת, והאני העתידי שלך ירגיש את החוסר.", "query": "wasted time phone regret" },
     "jealousy": { "en": "The people who seem the most present and alive right now are not disciplined superhumans. They just put the phone down first.", "he": "האנשים שנראים הכי נוכחים וחיים כרגע הם לא על אנושיים ממושמעים. הם פשוט הניחו את הטלפון קודם.", "query": "present engaged happy person" }
+  },
+  {
+    "id": "kintsugi-golden-repair",
+    "caption": "האמנות היפנית העתיקה הזו הופכת שבר לדבר היקר ביותר שיש 🏺 שמרו את זה",
+    "hook": { "en": "There is an ancient Japanese art that turns something broken into something more valuable than it ever was before.", "he": "יש אמנות יפנית עתיקה שהופכת דבר שבור לדבר יקר יותר משהיה אי פעם." },
+    "points": [
+      { "en": "It is called Kintsugi, the art of repairing broken pottery with real gold.", "he": "קוראים לה קינטסוגי, אמנות תיקון כלי חרס שבורים עם זהב אמיתי.", "query": "kintsugi gold pottery repair" },
+      { "en": "When a bowl shatters, the pieces are not thrown in the trash. They are carefully collected.", "he": "כשקערה מתנפצת, השברים לא זורקים אותם לפח. אוספים אותם בזהירות.", "query": "broken ceramic pieces floor" },
+      { "en": "The cracks are never hidden. They are filled with gold and placed on full display.", "he": "הסדקים לעולם לא מוסתרים. ממלאים אותם בזהב ומציגים אותם בגאווה.", "query": "gold paint brush pottery" },
+      { "en": "The repaired piece is not treated as damaged. It is treated as more valuable than the original.", "he": "הכלי המתוקן לא נחשב פגום. הוא נחשב יקר יותר מהמקור שלו.", "query": "golden vase cracks beautiful" },
+      { "en": "The philosophy is simple. Our failures were never something that needed to be hidden.", "he": "הפילוסופיה פשוטה. הכישלונות שלנו אף פעם לא היו צריכים להיות מוסתרים.", "query": "person confident calm strength" },
+      { "en": "Every scar you carry is proof you survived something that could have completely broken you.", "he": "כל צלקת שאתה נושא היא הוכחה ששרדת משהו שיכל לשבור אותך לגמרי.", "query": "resilient strong person portrait" },
+      { "en": "The people who look flawless online are hiding their cracks. The people who grow are the ones highlighting them.", "he": "אנשים שנראים מושלמים ברשת מסתירים את הסדקים שלהם. אנשים שצומחים דווקא מדגישים אותם.", "query": "person social media facade" },
+      { "en": "You are not broken. You are becoming something stronger, one repaired crack at a time.", "he": "אתה לא שבור. אתה הופך למשהו חזק יותר, סדק מתוקן אחד בכל פעם.", "query": "person growth transformation strength" }
+    ],
+    "fear": { "en": "Every time you hide a failure instead of learning from it, you throw away the gold that could have made you more valuable.", "he": "בכל פעם שאתה מסתיר כישלון במקום ללמוד ממנו, אתה זורק את הזהב שיכל להפוך אותך ליקר יותר.", "query": "hidden mask person facade" },
+    "jealousy": { "en": "The people you admire most were never the ones who never broke. They were the ones who let their cracks become gold.", "he": "האנשים שאתה הכי מעריץ אף פעם לא היו אלה שלא נשברו. הם היו אלה שנתנו לסדקים שלהם להפוך לזהב.", "query": "confident successful person golden" }
   }
 ]
