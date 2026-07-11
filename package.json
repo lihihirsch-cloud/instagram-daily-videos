@@ -1,0 +1,12 @@
+{
+  "name": "ryze-instagram-videos",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "generate": "node src/main.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "msedge-tts": "^2.0.6"
+  }
+}

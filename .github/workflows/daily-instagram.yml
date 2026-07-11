@@ -1,0 +1,66 @@
+name: Daily Instagram Videos
+
+on:
+  schedule:
+    # 4am Israel = ~1am UTC (winter) / 2am UTC (summer) — run every 30min 0-2 UTC
+    - cron: "0,30 1,2 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Force run ignoring daily dedupe"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-schedule:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install ffmpeg
+        run: sudo apt-get install -y ffmpeg
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check if already ran today
+        id: check
+        run: |
+          TODAY=$(TZ=Asia/Jerusalem date +%Y-%m-%d)
+          LAST=$(node -e "console.log(JSON.parse(require('fs').readFileSync('state.json','utf8')).lastRunDate || '')")
+          echo "today=$TODAY lastRunDate=$LAST"
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          elif [ "$LAST" = "$TODAY" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate and schedule videos
+        if: steps.check.outputs.skip == 'false'
+        env:
+          PIXABAY_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
+          BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID }}
+          FORCE_RUN: ${{ github.event.inputs.force }}
+        run: node src/main.js
+
+      - name: Commit updated state
+        if: steps.check.outputs.skip == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state.json
+          git diff --staged --quiet || git commit -m "Update rotation state $(TZ=Asia/Jerusalem date +%Y-%m-%d)"
+          git pull --rebase origin main
+          git push

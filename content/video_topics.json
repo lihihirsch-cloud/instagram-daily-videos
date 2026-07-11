@@ -1,0 +1,275 @@
+[
+  {
+    "id": "discipline-system",
+    "caption": "משמעת עצמית היא לא עניין של כוח רצון. היא מערכת שאתה בונה 💪 שמרו את הפוסט הזה",
+    "hook": { "en": "Most people think discipline is about willpower. They are completely wrong.", "he": "רוב האנשים חושבים שמשמעת זה כוח רצון. הם טועים לחלוטין." },
+    "points": [
+      { "en": "Discipline is a system, not a character trait. You design it.", "he": "משמעת היא מערכת, לא אופי. אתה מתכנן אותה.", "query": "system organization planning" },
+      { "en": "Your environment controls your behavior more than any motivation.", "he": "הסביבה שלך שולטת בהתנהגות שלך יותר מכל מוטיבציה.", "query": "organized workspace environment" },
+      { "en": "Make the right choice the easy choice by removing friction.", "he": "תהפוך את הבחירה הנכונה לבחירה הקלה על ידי הסרת חסמים.", "query": "clear path forward" },
+      { "en": "Track one habit for thirty days and watch momentum build itself.", "he": "תעקוב אחרי הרגל אחד שלושים יום ותראה איך תנופה נבנית לבד.", "query": "habit tracker calendar" },
+      { "en": "Start so small it feels ridiculous. Two minutes is always enough.", "he": "תתחיל כל כך קטן שזה מרגיש מגוחך. שתי דקות תמיד מספיקות.", "query": "small step beginning" },
+      { "en": "Every promise you keep to yourself makes your identity stronger.", "he": "כל הבטחה שאתה שומר לעצמך מחזקת את הזהות שלך.", "query": "man confident determination" },
+      { "en": "People who seem disciplined do not fight urges. They have removed them.", "he": "אנשים ממושמעים לא נלחמים בפיתויים. הם פשוט הרחיקו אותם.", "query": "minimalist clean room" },
+      { "en": "You fall to the level of your systems, not the level of your goals.", "he": "אתה נופל לרמת המערכות שלך, לא לרמת המטרות שלך.", "query": "foundation building structure" },
+      { "en": "The person you want to become is built one small daily decision at a time.", "he": "האדם שאתה רוצה להיות נבנה החלטה קטנה אחת בכל יום.", "query": "daily routine morning person" }
+    ],
+    "fear": { "en": "In one year you will look back and regret the days you kept waiting to start.", "he": "בעוד שנה תסתכל אחורה ותתחרט על כל הימים שחיכית להתחיל.", "query": "looking back regret" },
+    "jealousy": { "en": "Right now, someone with half your potential is already building the life you want.", "he": "עכשיו, מישהו עם חצי מהפוטנציאל שלך כבר בונה את החיים שאתה רוצה.", "query": "person working hard success" }
+  },
+  {
+    "id": "morning-routine",
+    "caption": "שעה אחת בבוקר יכולה לשנות את כל היום שלך. הנה איך 🌅",
+    "hook": { "en": "The first hour of your morning decides the quality of your entire day.", "he": "השעה הראשונה של הבוקר קובעת את איכות כל היום שלך." },
+    "points": [
+      { "en": "Wake up before the world starts asking things of you. That time is yours.", "he": "תתעורר לפני שהעולם מתחיל לדרוש ממך. אותו זמן שייך לך.", "query": "early morning sunrise peaceful" },
+      { "en": "Do not touch your phone for the first thirty minutes. Your brain needs space.", "he": "אל תיגע בטלפון בשלושים הדקות הראשונות. המוח שלך צריך מקום.", "query": "morning no phone mindful" },
+      { "en": "Drink water before coffee. Your body ran for eight hours without fuel.", "he": "תשתה מים לפני קפה. הגוף שלך רץ שמונה שעות בלי דלק.", "query": "glass of water morning" },
+      { "en": "Move your body for ten minutes. Even a short walk changes your energy.", "he": "תזיז את הגוף עשר דקות. אפילו הליכה קצרה משנה את האנרגיה.", "query": "morning walk exercise energy" },
+      { "en": "Write down the one thing that must happen today. One thing only.", "he": "תכתוב את הדבר האחד שחייב לקרות היום. דבר אחד בלבד.", "query": "writing notepad morning planning" },
+      { "en": "The morning sets your identity. Decide who you are before the day decides for you.", "he": "הבוקר קובע את הזהות שלך. תחליט מי אתה לפני שהיום יחליט במקומך.", "query": "confident person morning" },
+      { "en": "Avoid news and social media for the first hour. Both are designed to steal your calm.", "he": "תמנע מחדשות ורשתות חברתיות בשעה הראשונה. שניהם גונבים את השקט שלך.", "query": "calm peaceful morning tea" },
+      { "en": "A consistent morning routine beats motivation every single time.", "he": "שגרת בוקר קבועה מנצחת מוטיבציה בכל פעם.", "query": "consistent morning routine habit" }
+    ],
+    "fear": { "en": "Every morning you waste sets the tone for a day you can never get back.", "he": "כל בוקר שאתה מבזבז קובע את הטון ליום שלא תחזיר לעולם.", "query": "wasted time empty" },
+    "jealousy": { "en": "The most successful people you admire built their edge one early morning at a time.", "he": "האנשים המצליחים שאתה מעריץ בנו את היתרון שלהם בוקר בוקר.", "query": "successful person morning coffee" }
+  },
+  {
+    "id": "confidence-built",
+    "caption": "ביטחון עצמי לא נולדים איתו. בונים אותו 🔥 שמרו זאת",
+    "hook": { "en": "Confidence is not something you are born with. It is something you build with action.", "he": "ביטחון עצמי הוא לא משהו שנולדים איתו. בונים אותו עם פעולה." },
+    "points": [
+      { "en": "Every small act of courage makes the next one easier. Start somewhere.", "he": "כל מעשה אומץ קטן מקל על הבא. תתחיל איפשהו.", "query": "courage small step forward" },
+      { "en": "Stand tall and breathe deeply before entering any room. Your body changes your mind.", "he": "תעמוד זקוף ותנשום עמוק לפני שתיכנס לכל חדר. הגוף שלך משנה את המחשבה.", "query": "confident posture standing" },
+      { "en": "Stop asking for permission to take up space. You belong wherever you decide to be.", "he": "תפסיק לבקש רשות לתפוס מקום. אתה שייך לכל מקום שתחליט להיות בו.", "query": "person confident space" },
+      { "en": "Speak first in rooms where you feel afraid. That habit alone will change your life.", "he": "תדבר ראשון בחדרים שבהם אתה מרגיש מפוחד. ההרגל הזה לבדו ישנה את חייך.", "query": "speaking presenting group" },
+      { "en": "Every time you do what you said you would, your self-trust grows.", "he": "כל פעם שאתה עושה את מה שאמרת שתעשה, האמון בעצמך גדל.", "query": "person keeping promise determination" },
+      { "en": "Stop comparing your beginning to someone else's middle. You are on a different timeline.", "he": "תפסיק להשוות את ההתחלה שלך לאמצע של מישהו אחר. אתה על ציר זמן שונה.", "query": "individual unique path" },
+      { "en": "Failure is not the opposite of success. It is the data that builds success.", "he": "כישלון הוא לא ההפך של הצלחה. הוא המידע שבונה הצלחה.", "query": "learning from failure growth" },
+      { "en": "The most confident people you know are also the most prepared.", "he": "האנשים הכי בטוחים בעצמם שאתה מכיר הם גם הכי מוכנים.", "query": "preparation study confident" }
+    ],
+    "fear": { "en": "The version of you that never takes risks will still be in the same place in five years.", "he": "הגרסה שלך שלא לוקחת סיכונים תהיה באותו מקום בעוד חמש שנים.", "query": "stuck same place" },
+    "jealousy": { "en": "People with less talent than you are leading rooms you are afraid to enter.", "he": "אנשים עם פחות כישרון ממך מובילים חדרים שאתה מפחד להיכנס אליהם.", "query": "leader room success" }
+  },
+  {
+    "id": "overthinking-stop",
+    "caption": "אתה לא מנתח את המצב. אתה חוסם את עצמך. הנה איך לעצור 🧠",
+    "hook": { "en": "Overthinking is not planning. It is fear pretending to be productive.", "he": "חשיבת יתר היא לא תכנון. היא פחד שמתחזה לפרודוקטיביות." },
+    "points": [
+      { "en": "Your brain looks for problems, not solutions. Train it to spot what is possible.", "he": "המוח שלך מחפש בעיות, לא פתרונות. תאמן אותו לראות מה אפשרי.", "query": "brain thinking possibility" },
+      { "en": "Set a five-minute timer for decisions. After five minutes you act, no matter what.", "he": "תגדיר טיימר חמש דקות להחלטות. אחרי חמש דקות אתה פועל, לא משנה מה.", "query": "timer decision making" },
+      { "en": "Most things you worry about never actually happen. Your imagination is lying to you.", "he": "רוב הדברים שאתה דואג לגביהם לעולם לא קורים. הדמיון שלך משקר לך.", "query": "worry anxiety overthinking" },
+      { "en": "Done is better than perfect. A finished action beats a perfect plan every time.", "he": "גמור טוב יותר משלם. פעולה גמורה מנצחת תוכנית מושלמת בכל פעם.", "query": "action done completed work" },
+      { "en": "Write your worries down. Most of them look much smaller on paper.", "he": "תכתוב את הדאגות שלך. רובן נראות הרבה יותר קטנות על נייר.", "query": "writing journal notebook pen" },
+      { "en": "Ask one question: what is the worst realistic thing that could happen? Then plan for that.", "he": "תשאל שאלה אחת: מה הדבר הכי גרוע שיכול לקרות באמת? ואז תכנן לזה.", "query": "realistic planning calmly" },
+      { "en": "Motion breaks paralysis. Take one tiny step and your brain shifts into action mode.", "he": "תנועה שוברת שיתוק. תעשה צעד אחד קטן והמוח שלך יעבור למצב פעולה.", "query": "first step movement action" },
+      { "en": "You do not need more information. You need to trust yourself enough to begin.", "he": "אתה לא צריך יותר מידע. אתה צריך לסמוך על עצמך מספיק כדי להתחיל.", "query": "trust yourself confidence begin" }
+    ],
+    "fear": { "en": "Every hour you spend overthinking is an hour someone else spends building.", "he": "כל שעה שאתה מבלה בחשיבת יתר, מישהו אחר מבלה בבנייה.", "query": "time passing clock" },
+    "jealousy": { "en": "The people ahead of you did not know more. They just decided to move first.", "he": "האנשים שלפניך לא ידעו יותר. הם פשוט החליטו לזוז ראשונים.", "query": "person moving forward success" }
+  },
+  {
+    "id": "resilience-bounce",
+    "caption": "כולם נופלים. הדבר שמפריד בין הצלחה לכישלון הוא כמה מהר אתה קם 💪",
+    "hook": { "en": "Everyone fails. What separates successful people is how fast they get back up.", "he": "כולם נופלים. מה שמפריד בין אנשים מצליחים הוא כמה מהר הם קמים." },
+    "points": [
+      { "en": "A setback is not a stop sign. It is a redirect sign pointing to a better path.", "he": "מכשול הוא לא תמרור עצור. הוא תמרור הפניה לנתיב טוב יותר.", "query": "redirect detour path" },
+      { "en": "Allow yourself to feel bad for one day. Then decide what the next step is.", "he": "תאפשר לעצמך להרגיש רע יום אחד. ואז תחליט מה הצעד הבא.", "query": "person recovering getting up" },
+      { "en": "Your story does not end when things go wrong. That is usually where it begins.", "he": "הסיפור שלך לא נגמר כשדברים הולכים עקום. לרוב שם הוא מתחיל.", "query": "story beginning new chapter" },
+      { "en": "Every failure gives you information that success never could.", "he": "כל כישלון נותן לך מידע שהצלחה לעולם לא יכלה.", "query": "lessons learned experience" },
+      { "en": "The people you admire most have failed more times than you know.", "he": "האנשים שאתה מעריץ ביותר נכשלו יותר פעמים ממה שאתה יודע.", "query": "famous success failures stories" },
+      { "en": "Resilience is a skill. The more you practice getting back up, the faster you do it.", "he": "חוסן הוא מיומנות. ככל שאתה מתרגל לקום, כך אתה עושה את זה מהר יותר.", "query": "practice skill improvement" },
+      { "en": "Talk to yourself like you would talk to a friend after a hard day.", "he": "תדבר עם עצמך כמו שהיית מדבר עם חבר אחרי יום קשה.", "query": "friend support compassion" },
+      { "en": "The only failure that counts is the one where you stop trying.", "he": "הכישלון היחיד שנחשב הוא זה שבו אתה מפסיק לנסות.", "query": "keep trying persistence" }
+    ],
+    "fear": { "en": "The hardest part is not the fall. It is letting fear of another fall keep you down forever.", "he": "החלק הכי קשה הוא לא הנפילה. זה לתת לפחד מנפילה נוספת להשאיר אותך למטה לנצח.", "query": "fear holding back" },
+    "jealousy": { "en": "Someone with a harder story than yours has already built what you are still dreaming about.", "he": "מישהו עם סיפור קשה יותר משלך כבר בנה את מה שאתה עדיין רק חולם עליו.", "query": "dream achieved success story" }
+  },
+  {
+    "id": "focus-deep-work",
+    "caption": "הסוד של האנשים הכי פרודוקטיביים בעולם הוא ריכוז עמוק 🎯",
+    "hook": { "en": "The ability to focus deeply without distraction is the most valuable skill of our time.", "he": "היכולת להתרכז עמוק בלי הסחות דעת היא המיומנות הכי יקרת ערך של זמננו." },
+    "points": [
+      { "en": "Close every tab that is not part of the task. Your brain cannot truly multitask.", "he": "סגור כל טאב שלא קשור למשימה. המוח שלך לא יכול באמת לעשות מולטיטאסקינג.", "query": "focused single task computer" },
+      { "en": "Work in blocks of ninety minutes. That is how long your brain can sustain deep focus.", "he": "תעבוד בבלוקים של תשעים דקות. כך הזמן שהמוח שלך יכול לשמור ריכוז עמוק.", "query": "timer work session focus" },
+      { "en": "Put your phone in another room. Not on silent. In another room.", "he": "שים את הטלפון בחדר אחר. לא על שקט. בחדר אחר.", "query": "phone away distraction free" },
+      { "en": "The quality of your output depends entirely on the quality of your attention.", "he": "איכות הפלט שלך תלויה לחלוטין באיכות הקשב שלך.", "query": "quality attention focus output" },
+      { "en": "Distraction is addictive. Focus is a skill you must build deliberately.", "he": "הסחת דעת היא ממכרת. ריכוז הוא מיומנות שאתה חייב לבנות במכוון.", "query": "building skill deliberately" },
+      { "en": "Start with the hardest task of the day. Tackle it first while your energy is highest.", "he": "התחל עם המשימה הכי קשה של היום. תתמודד איתה ראשון כשהאנרגיה שלך הכי גבוהה.", "query": "hard task first morning energy" },
+      { "en": "Create a ritual that signals your brain it is time to focus. Same time, same place.", "he": "צור טקס שמאותת למוח שלך שהגיע הזמן להתרכז. אותו זמן, אותו מקום.", "query": "ritual routine focus signal" },
+      { "en": "One hour of deep focus beats three hours of distracted work. Always.", "he": "שעה אחת של ריכוז עמוק מנצחת שלוש שעות של עבודה עם הסחות דעת. תמיד.", "query": "efficient focused work" }
+    ],
+    "fear": { "en": "Every distraction you allow costs you more than just the minutes it takes.", "he": "כל הסחת דעת שאתה מאפשר עולה לך יותר מסתם הדקות שהיא לוקחת.", "query": "time cost distraction" },
+    "jealousy": { "en": "The people producing the most are not working more hours. They are protecting their focus.", "he": "האנשים שמייצרים הכי הרבה לא עובדים יותר שעות. הם מגנים על הריכוז שלהם.", "query": "productive protected time" }
+  },
+  {
+    "id": "habits-identity",
+    "caption": "ההרגלים שלך הם לא מה שאתה עושה. הם מי שאתה 🌟",
+    "hook": { "en": "You do not rise to your goals. You fall to the level of your habits.", "he": "אתה לא עולה לרמת המטרות שלך. אתה נופל לרמת ההרגלים שלך." },
+    "points": [
+      { "en": "Every habit is a vote for the type of person you want to become.", "he": "כל הרגל הוא הצבעה על סוג האדם שאתה רוצה להיות.", "query": "voting choice identity" },
+      { "en": "Forget about outcomes. Focus on becoming the type of person who would get those outcomes.", "he": "תשכח מתוצאות. תתרכז בלהפוך לסוג האדם שיקבל את אותן תוצאות.", "query": "identity person character" },
+      { "en": "A habit of one percent better every day creates a person unrecognizable in one year.", "he": "הרגל של אחוז שיפור כל יום יוצר אדם שלא יכיר את עצמו בעוד שנה.", "query": "small improvement daily growth" },
+      { "en": "The environment you live in decides most of your automatic behaviors. Design it.", "he": "הסביבה שאתה חי בה קובעת את רוב ההתנהגויות האוטומטיות שלך. תעצב אותה.", "query": "design environment intentional" },
+      { "en": "Attach a new habit to an existing one. After coffee, I will read. After gym, I will plan.", "he": "תצמד הרגל חדש להרגל קיים. אחרי קפה, אני אקרא. אחרי חדר כושר, אני אתכנן.", "query": "habit stacking routine chain" },
+      { "en": "Make breaking a habit harder than keeping it. Use friction as your friend.", "he": "תהפוך את שבירת ההרגל לקשה יותר משמירתו. תשתמש בחיכוך כחבר שלך.", "query": "friction barrier stopping" },
+      { "en": "A single missed day is fine. Two in a row starts to break the chain. Never miss twice.", "he": "יום אחד שפספסת זה בסדר. שניים ברציפות מתחיל לשבור את השרשרת. אל תפספס פעמיים.", "query": "consistency chain streak" },
+      { "en": "Reward yourself immediately after completing a habit. Your brain needs to feel good about it.", "he": "תתגמל את עצמך מיד אחרי השלמת הרגל. המוח שלך צריך להרגיש טוב עם זה.", "query": "reward celebration achievement" }
+    ],
+    "fear": { "en": "The habits you ignore today will silently shape who you are five years from now.", "he": "ההרגלים שאתה מתעלם מהם היום יעצבו בשקט מי שתהיה בעוד חמש שנים.", "query": "future self five years" },
+    "jealousy": { "en": "The person winning in your field has better daily habits, not more talent.", "he": "האדם שמנצח בתחום שלך יש לו הרגלים יומיומיים טובים יותר, לא יותר כישרון.", "query": "winner habits successful daily" }
+  },
+  {
+    "id": "energy-management",
+    "caption": "ניהול אנרגיה חשוב יותר מניהול זמן. הנה למה ⚡",
+    "hook": { "en": "Time management is not your problem. Energy management is.", "he": "ניהול זמן הוא לא הבעיה שלך. ניהול אנרגיה הוא." },
+    "points": [
+      { "en": "Eight hours of tired work is worth less than four hours of energized work.", "he": "שמונה שעות של עבודה עייפה שוות פחות מארבע שעות של עבודה ערנית.", "query": "energized focused work quality" },
+      { "en": "Sleep is not laziness. It is the foundation of every good decision you will make.", "he": "שינה היא לא עצלות. היא הבסיס לכל החלטה טובה שתקבל.", "query": "sleep rest recovery foundation" },
+      { "en": "Food is information for your body. What you eat tells your cells how to function.", "he": "אוכל הוא מידע לגוף שלך. מה שאתה אוכל אומר לתאים שלך איך לתפקד.", "query": "healthy food nutrition energy" },
+      { "en": "Move your body every day. Even walking changes brain chemistry within minutes.", "he": "תזיז את הגוף שלך כל יום. אפילו הליכה משנה כימיה במוח תוך דקות.", "query": "walking movement exercise brain" },
+      { "en": "Track what drains your energy. Some activities and people are invisible energy vampires.", "he": "תעקוב אחרי מה שמרוקן את האנרגיה שלך. פעילויות ואנשים מסוימים הם ערפדי אנרגיה בלתי נראים.", "query": "energy drain awareness" },
+      { "en": "Short breaks during work do not waste time. They multiply the quality of what you produce.", "he": "הפסקות קצרות במהלך עבודה לא מבזבזות זמן. הן מכפילות את איכות מה שאתה מייצר.", "query": "break rest productive recovery" },
+      { "en": "Say no to more things. Every yes to something unimportant is a no to something vital.", "he": "תגיד לא ליותר דברים. כל כן לדבר לא חשוב הוא לא לדבר חיוני.", "query": "saying no boundaries priority" },
+      { "en": "Protect your mornings like they are your most valuable resource. They are.", "he": "תגן על הבקרים שלך כאילו הם המשאב הכי יקר שיש לך. הם אכן כאלה.", "query": "protect morning valuable resource" }
+    ],
+    "fear": { "en": "Running on empty every day is not dedication. It is quietly destroying your potential.", "he": "לרוץ על ריק כל יום הוא לא מסירות. זה בשקט הורס את הפוטנציאל שלך.", "query": "empty exhausted burnout" },
+    "jealousy": { "en": "High performers are not doing more. They are doing less, but with full energy.", "he": "בעלי ביצועים גבוהים לא עושים יותר. הם עושים פחות, אבל עם אנרגיה מלאה.", "query": "high performance energy full" }
+  },
+  {
+    "id": "social-influence",
+    "caption": "5 הדרכים שאנשים מצליחים גורמים לכולם לאהוב אותם 🤝",
+    "hook": { "en": "The most successful people in any room are not the loudest. They are the most genuinely interested.", "he": "האנשים המצליחים ביותר בכל חדר הם לא הרועשים ביותר. הם הכי מעוניינים באמת באחרים." },
+    "points": [
+      { "en": "Ask more questions than you answer. People feel seen when they are heard.", "he": "תשאל יותר שאלות ממה שאתה עונה. אנשים מרגישים נראים כשמקשיבים להם.", "query": "listening asking questions conversation" },
+      { "en": "Remember names. It is a small act that signals a person is worth remembering.", "he": "תזכור שמות. זה מעשה קטן שמאותת שאדם שווה לזכור.", "query": "remembering name greeting" },
+      { "en": "Make eye contact when someone speaks to you. It is the cheapest gift you can give.", "he": "תעשה קשר עין כשמישהו מדבר אליך. זה המתנה הזולה ביותר שאתה יכול לתת.", "query": "eye contact attention listening" },
+      { "en": "Admit when you are wrong quickly and clearly. It builds more trust than being right.", "he": "תודה כשאתה טועה מהר וברור. זה בונה יותר אמון מלהיות צודק.", "query": "admitting wrong trust integrity" },
+      { "en": "Find something genuine to compliment in every person you meet. Do not fake it.", "he": "תמצא משהו אמיתי לשבח בכל אדם שאתה פוגש. אל תזייף.", "query": "genuine compliment appreciation" },
+      { "en": "Show up consistently for the people in your life. Reliability is the rarest social currency.", "he": "תופיע באופן עקבי לאנשים בחייך. אמינות היא המטבע החברתי הנדיר ביותר.", "query": "reliable consistent friendship" },
+      { "en": "Give without expecting anything back and watch what comes back to you eventually.", "he": "תיתן בלי לצפות לכלום בחזרה וראה מה חוזר אליך בסופו של דבר.", "query": "giving generosity return" },
+      { "en": "Speak well of people when they are not in the room. It always gets back to them.", "he": "תדבר טוב על אנשים כשהם לא בחדר. זה תמיד מגיע אליהם.", "query": "speaking positively about others" }
+    ],
+    "fear": { "en": "The person who never invests in relationships will face every hard moment alone.", "he": "האדם שלעולם לא משקיע בקשרים יתמודד עם כל רגע קשה לבד.", "query": "alone isolated no connections" },
+    "jealousy": { "en": "The opportunities you want come through people you have not yet connected with deeply enough.", "he": "ההזדמנויות שאתה רוצה מגיעות דרך אנשים שעדיין לא התחברת אליהם עמוק מספיק.", "query": "connection opportunity network" }
+  },
+  {
+    "id": "mindset-growth",
+    "caption": "גישה לצמיחה היא לא ביטוי נחמד. היא שינוי אמיתי במוח שלך 🧠",
+    "hook": { "en": "Your biggest limitation is not your circumstances. It is the story you tell yourself about them.", "he": "המגבלה הכי גדולה שלך היא לא הנסיבות שלך. זה הסיפור שאתה מספר לעצמך עליהן." },
+    "points": [
+      { "en": "Replace the phrase I can not with I have not learned how to yet.", "he": "החלף את המשפט אני לא יכול ב אני עדיין לא למדתי איך.", "query": "learning growing improving mindset" },
+      { "en": "Challenges are not obstacles. They are the curriculum for the person you are becoming.", "he": "אתגרים הם לא מכשולים. הם תוכנית הלימודים לאדם שאתה הופך להיות.", "query": "challenge curriculum growth" },
+      { "en": "The brain changes physically when you push through difficulty. You are literally rewiring.", "he": "המוח משתנה פיזית כשאתה דוחף דרך קושי. אתה ממש מחווט מחדש.", "query": "brain neuroplasticity rewiring" },
+      { "en": "Criticism is information. Decide what to do with it instead of just feeling it.", "he": "ביקורת היא מידע. תחליט מה לעשות איתה במקום רק להרגיש אותה.", "query": "feedback information decision" },
+      { "en": "Surround yourself with people who are slightly ahead of where you want to be.", "he": "תקיף את עצמך באנשים שנמצאים קצת קדימה ממקום שאתה רוצה להגיע.", "query": "surround people ahead mentor" },
+      { "en": "Effort is not a sign of weakness. It is proof that something is worth doing.", "he": "מאמץ הוא לא סימן לחולשה. הוא הוכחה שמשהו שווה לעשות.", "query": "effort hard work worth it" },
+      { "en": "Compare yourself only to who you were yesterday. That is the only race that matters.", "he": "תשווה את עצמך רק למי שהיית אתמול. זה המרוץ היחיד שחשוב.", "query": "compare yourself yesterday progress" },
+      { "en": "Embrace the beginner stage. Every expert was once confused and uncomfortable too.", "he": "תחבק את שלב המתחיל. כל מומחה היה פעם מבולבל ולא נוח גם.", "query": "beginner learning start expert" }
+    ],
+    "fear": { "en": "A fixed mindset will keep you safe and small. Safe and small is its own kind of tragedy.", "he": "גישה קבועה תשמור אותך בטוח וקטן. בטוח וקטן הוא סוג של טרגדיה משלו.", "query": "small safe comfortable stuck" },
+    "jealousy": { "en": "Everyone who grew past where you are now once felt exactly what you feel right now.", "he": "כל מי שצמח מעבר למקום שאתה נמצא בו עכשיו הרגיש בדיוק מה שאתה מרגיש עכשיו.", "query": "growth past comfort zone" }
+  },
+  {
+    "id": "procrastination-cure",
+    "caption": "דחיינות היא לא בעיית זמן. היא בעיית רגש. הנה הפתרון האמיתי 🔑",
+    "hook": { "en": "Procrastination is not a time management problem. It is an emotion management problem.", "he": "דחיינות היא לא בעיית ניהול זמן. היא בעיית ניהול רגשות." },
+    "points": [
+      { "en": "You avoid tasks because they trigger discomfort, not because you are lazy.", "he": "אתה נמנע ממשימות כי הן מעוררות אי נוחות, לא כי אתה עצלן.", "query": "avoidance discomfort emotion" },
+      { "en": "Name the feeling behind the procrastination. Fear, boredom, or uncertainty all have different fixes.", "he": "תתן שם לרגש מאחורי הדחיינות. פחד, שעמום ואי ודאות לכל אחד יש פתרון שונה.", "query": "naming emotions feelings awareness" },
+      { "en": "The two minute rule: if it takes less than two minutes, do it right now.", "he": "כלל שתי הדקות: אם זה לוקח פחות משתי דקות, תעשה את זה עכשיו.", "query": "quick task two minutes action" },
+      { "en": "Break the project into the smallest possible first step. Then do only that.", "he": "תשבור את הפרויקט לצעד הראשון הכי קטן שאפשר. ואז תעשה רק את זה.", "query": "small first step project breakdown" },
+      { "en": "Use the five second rule. Count five four three two one and start moving before doubt arrives.", "he": "תשתמש בכלל חמש השניות. ספור חמש ארבע שלוש שתיים אחת ותתחיל לנוע לפני שהספק מגיע.", "query": "countdown action start moving" },
+      { "en": "Change your environment when you feel stuck. Even moving to another chair can reset your brain.", "he": "שנה את הסביבה כשאתה מרגיש תקוע. אפילו מעבר לכיסא אחר יכול לאפס את המוח.", "query": "change environment reset brain" },
+      { "en": "Reward the behavior, not the result. Celebrate starting, not only finishing.", "he": "תגמל את ההתנהגות, לא את התוצאה. תחגוג את ההתחלה, לא רק את הסיום.", "query": "celebrate starting reward behavior" },
+      { "en": "Future you will not have more motivation. Future you will face the same fears with less time.", "he": "אתה העתידי לא יהיה עם יותר מוטיבציה. אתה העתידי יתמודד עם אותם פחדים עם פחות זמן.", "query": "future self same fears less time" }
+    ],
+    "fear": { "en": "Every day you delay, the gap between who you are and who you could be gets wider.", "he": "כל יום שאתה דוחה, הפער בין מי שאתה לבין מי שיכולת להיות מתרחב.", "query": "gap growing wider delay" },
+    "jealousy": { "en": "The person who started a year ago with less skill than you has already lapped you.", "he": "האדם שהתחיל לפני שנה עם פחות מיומנות ממך כבר עקף אותך.", "query": "started earlier ahead progress" }
+  },
+  {
+    "id": "rejection-strength",
+    "caption": "כל דחייה שקיבלת הייתה הכנה לרגע שעוד לא הגיע 💫",
+    "hook": { "en": "Every rejection you received was actually preparing you for something you were not ready for yet.", "he": "כל דחייה שקיבלת למעשה הכינה אותך למשהו שעוד לא היית מוכן לו." },
+    "points": [
+      { "en": "Rejection means you tried. Most people never even get rejected because they never try.", "he": "דחייה אומרת שניסית. רוב האנשים לא נדחים אף פעם כי הם לא מנסים בכלל.", "query": "try attempt courage rejection" },
+      { "en": "Separate your worth from the outcome. One no does not define your value.", "he": "הפרד בין הערך שלך לבין התוצאה. לא אחד לא מגדיר את הערך שלך.", "query": "self worth separate outcome" },
+      { "en": "Ask why after every rejection. The answer often reveals exactly what you need to improve.", "he": "תשאל למה אחרי כל דחייה. התשובה לרוב חושפת בדיוק מה שאתה צריך לשפר.", "query": "why question learning feedback" },
+      { "en": "The most successful careers are built on the foundation of many rejections survived.", "he": "הקריירות המצליחות ביותר בנויות על הבסיס של דחיות רבות שנישרדו.", "query": "career built rejections foundation" },
+      { "en": "Build rejection immunity by seeking small rejections daily. Ask for things. Get used to no.", "he": "תבנה חסינות לדחייה על ידי חיפוש דחיות קטנות יומיומיות. תבקש דברים. תתרגל לשמוע לא.", "query": "immunity practice small rejections" },
+      { "en": "A no from the wrong person in the wrong moment is often a gift in disguise.", "he": "לא מהאדם הלא נכון ברגע הלא נכון הוא לרוב מתנה במסווה.", "query": "gift disguise wrong timing" },
+      { "en": "Your self-talk after rejection matters more than the rejection itself.", "he": "האופן שבו אתה מדבר עם עצמך אחרי דחייה חשוב יותר מהדחייה עצמה.", "query": "self talk after rejection inner voice" },
+      { "en": "The people who changed the world were all told no many times. The difference is they continued.", "he": "האנשים ששינו את העולם כולם שמעו לא פעמים רבות. ההבדל הוא שהם המשיכו.", "query": "continue despite rejection persevere" }
+    ],
+    "fear": { "en": "Avoiding rejection means avoiding everything worth having in life.", "he": "הימנעות מדחייה אומרת הימנעות מכל מה ששווה שיהיה לך בחיים.", "query": "avoiding life missing out" },
+    "jealousy": { "en": "The people living your dream life got there through more rejections than you have faced yet.", "he": "האנשים שחיים את חיי החלום שלך הגיעו לשם דרך יותר דחיות ממה שאתה התמודדת איתן עד עכשיו.", "query": "dream life achieved through rejections" }
+  },
+  {
+    "id": "purpose-clarity",
+    "caption": "אנשים ללא מטרה ברורה עובדים קשה אבל מרגישים ריקים. כך תמצא את שלך 🎯",
+    "hook": { "en": "Working hard without a clear purpose is like rowing fast in the wrong direction.", "he": "לעבוד קשה בלי מטרה ברורה זה כמו לחתור מהר בכיוון הלא נכון." },
+    "points": [
+      { "en": "Purpose is not found. It is built through action, reflection, and experience.", "he": "מטרה לא מוצאים. בונים אותה דרך פעולה, רפלקציה וניסיון.", "query": "building purpose reflection experience" },
+      { "en": "Ask what you would do if money was not the question. Then figure out how to make it the answer.", "he": "תשאל מה היית עושה אם כסף לא היה השאלה. ואז תבין איך להפוך אותו לתשובה.", "query": "passion work money question" },
+      { "en": "Notice what makes you lose track of time. That intersection of skill and joy is worth exploring.", "he": "שים לב למה שגורם לך לאבד את תחושת הזמן. הצומת הזה של מיומנות ושמחה שווה לחקור.", "query": "flow state time lost joy" },
+      { "en": "Your why does not need to be huge. It needs to be yours and it needs to be real.", "he": "ה-למה שלך לא צריך להיות ענק. הוא צריך להיות שלך והוא צריך להיות אמיתי.", "query": "personal authentic why reason" },
+      { "en": "Clarity comes from action, not from thinking. Try things and let clarity follow.", "he": "בהירות מגיעה מפעולה, לא מחשיבה. תנסה דברים ותן לבהירות לעקוב.", "query": "action clarity following doing" },
+      { "en": "The person who knows why can bear almost any how.", "he": "האדם שיודע למה יכול לשאת כמעט כל איך.", "query": "knowing why purpose bearing difficulty" },
+      { "en": "Write down what you want your life to look like in ten years. Then reverse engineer the steps.", "he": "תכתוב איך אתה רוצה שהחיים שלך ייראו בעוד עשר שנים. ואז תהנדס לאחור את הצעדים.", "query": "ten year vision planning reverse" },
+      { "en": "Purpose is not a destination. It is the compass that tells you which direction to move.", "he": "מטרה היא לא יעד. היא המצפן שאומר לך לאיזה כיוון לזוז.", "query": "compass direction purpose movement" }
+    ],
+    "fear": { "en": "Reaching the end of life without ever asking what it was for is the most common regret.", "he": "להגיע לסוף החיים בלי לשאול אף פעם בשביל מה זה היה הוא החרטה הכי נפוצה.", "query": "regret end of life purpose" },
+    "jealousy": { "en": "People with clear purpose wake up differently than people without one. You can feel the difference.", "he": "אנשים עם מטרה ברורה מתעוררים אחרת מאנשים ללא מטרה. אפשר להרגיש את ההבדל.", "query": "waking up purpose driven morning" }
+  },
+  {
+    "id": "money-mindset",
+    "caption": "הדרך שאתה חושב על כסף קובעת כמה שיהיה לך ממנו 💰",
+    "hook": { "en": "Your beliefs about money were formed before you were ten years old. Most of them are wrong.", "he": "האמונות שלך על כסף נוצרו לפני שהיית בן עשר. רוב מהן שגויות." },
+    "points": [
+      { "en": "Money is a tool, not a personality trait. It amplifies who you already are.", "he": "כסף הוא כלי, לא תכונת אופי. הוא מגביר את מי שאתה כבר.", "query": "money tool amplify character" },
+      { "en": "Spending money on experiences creates more happiness than spending it on things.", "he": "הוצאת כסף על חוויות יוצרת יותר אושר מהוצאתו על דברים.", "query": "experiences happiness travel adventure" },
+      { "en": "Pay yourself first. Save before you spend, not after.", "he": "שלם לעצמך ראשון. חסוך לפני שאתה מוציא, לא אחרי.", "query": "saving money first investment" },
+      { "en": "Learn one new financial concept every week. Money rewards knowledge more than hard work.", "he": "למד מושג פיננסי חדש אחד כל שבוע. כסף מתגמל ידע יותר מעבודה קשה.", "query": "financial education learning money" },
+      { "en": "The difference between rich and poor is often not income. It is decisions over time.", "he": "ההבדל בין עשיר לעני לרוב הוא לא הכנסה. זה החלטות לאורך זמן.", "query": "decisions over time wealth building" },
+      { "en": "Stop trading time for money and start creating systems that make money while you sleep.", "he": "תפסיק לסחור זמן תמורת כסף ותתחיל ליצור מערכות שמייצרות כסף בזמן שאתה ישן.", "query": "passive income systems sleeping money" },
+      { "en": "Give generously. Scarcity thinking keeps money away. Abundance thinking attracts it.", "he": "תיתן בנדיבות. חשיבת מחסור מרחיקה כסף. חשיבת שפע מושכת אותו.", "query": "abundance giving generosity wealth" },
+      { "en": "Track every shekel you spend for one month. What gets measured gets managed.", "he": "עקוב אחרי כל שקל שאתה מוציא חודש אחד. מה שנמדד מנוהל.", "query": "tracking spending budget measure" }
+    ],
+    "fear": { "en": "Not understanding money means money will always be a source of stress instead of freedom.", "he": "אי הבנה של כסף אומרת שכסף תמיד יהיה מקור לסטרס במקום לחופש.", "query": "financial stress vs freedom" },
+    "jealousy": { "en": "The financial gap between you and the people ahead of you is mostly a mindset gap.", "he": "הפער הכלכלי בינך לבין האנשים שלפניך הוא בעיקר פער בגישה.", "query": "financial gap mindset wealth" }
+  },
+  {
+    "id": "communication-power",
+    "caption": "אנשים שמתקשרים טוב מרוויחים יותר, מקדמים יותר ומשפיעים יותר 🗣️",
+    "hook": { "en": "The single skill that unlocks every other opportunity in life is how well you communicate.", "he": "המיומנות הבודדת שפותחת כל הזדמנות אחרת בחיים היא עד כמה אתה מתקשר טוב." },
+    "points": [
+      { "en": "Listen more than you speak. Most people are waiting to talk, not listening to understand.", "he": "תקשיב יותר ממה שאתה מדבר. רוב האנשים מחכים לדבר, לא מקשיבים כדי להבין.", "query": "listening understanding conversation" },
+      { "en": "Be clear over clever. Simple language is the language of people who actually know what they mean.", "he": "היה ברור לפני שחכם. שפה פשוטה היא שפת האנשים שבאמת יודעים מה הם מתכוונים.", "query": "clear simple communication" },
+      { "en": "Use their name when you speak to someone. It is the most personal sound in any language.", "he": "תשתמש בשמם כשאתה מדבר עם מישהו. זה הצליל הכי אישי בכל שפה.", "query": "personal name greeting connection" },
+      { "en": "Pause before you respond. That gap shows you thought about what they said.", "he": "תעצור לפני שאתה מגיב. הפאוזה הזו מראה שחשבת על מה שהם אמרו.", "query": "pause think respond thoughtful" },
+      { "en": "Write shorter emails. Every word should earn its place. Delete the rest.", "he": "כתוב מיילים קצרים יותר. כל מילה צריכה להרוויח את מקומה. תמחק את השאר.", "query": "concise writing email short" },
+      { "en": "Stories are more persuasive than facts. If you want to change minds, tell a story first.", "he": "סיפורים יותר משכנעים מעובדות. אם אתה רוצה לשנות דעות, ספר סיפור קודם.", "query": "storytelling persuasion influence" },
+      { "en": "Conflict is resolved faster when you speak about feelings instead of actions.", "he": "קונפליקט נפתר מהר יותר כשאתה מדבר על רגשות במקום על פעולות.", "query": "conflict resolution feelings communication" },
+      { "en": "Practice speaking in public regularly. It trains your brain under pressure.", "he": "תתרגל לדבר בפומבי באופן קבוע. זה מאמן את המוח שלך תחת לחץ.", "query": "public speaking practice training" }
+    ],
+    "fear": { "en": "Poor communication costs you opportunities, relationships, and income every single day.", "he": "תקשורת גרועה עולה לך הזדמנויות, מערכות יחסים והכנסה כל יום.", "query": "poor communication cost loss" },
+    "jealousy": { "en": "People who communicate well get the credit, the raise, and the room that better workers do not.", "he": "אנשים שמתקשרים טוב מקבלים את הקרדיט, העלאה והחדר שעובדים טובים יותר לא מקבלים.", "query": "communication success career advancement" }
+  },
+  {
+    "id": "mindblowing-facts",
+    "caption": "עובדות שיגרמו לך להסתכל על העולם אחרת 🤯 שמרו את זה",
+    "hook": { "en": "This fact will change the way you see the world forever.", "he": "העובדה הזו תשנה לך את הדרך שבה אתה רואה את העולם, לתמיד." },
+    "points": [
+      { "en": "Octopuses have three hearts, and their blood is blue, not red.", "he": "לתמנון יש שלושה לבבות, והדם שלו כחול, לא אדום.", "query": "octopus underwater ocean" },
+      { "en": "A single day on Venus is longer than its entire year around the sun.", "he": "יום אחד בנוגה ארוך יותר משנה שלמה שלה סביב השמש.", "query": "planet space rotation" },
+      { "en": "Honey found in ancient tombs is still perfectly edible after three thousand years.", "he": "דבש שנמצא בקברים עתיקים עדיין אכיל לחלוטין אחרי שלושת אלפים שנה.", "query": "golden honey jar light" },
+      { "en": "There are more stars in the universe than grains of sand on every beach on Earth.", "he": "יש יותר כוכבים ביקום מגרגירי חול בכל חופי הים בעולם.", "query": "galaxy stars milky way night" },
+      { "en": "Sharks are older than trees. They were swimming the oceans before trees existed on land.", "he": "כרישים קיימים לפני העצים. הם שחו באוקיינוסים עוד לפני שהיו עצים בעולם.", "query": "shark ocean swimming" },
+      { "en": "A blue whale's heart is the size of a small car, and a child could crawl through its arteries.", "he": "הלב של לוויתן כחול בגודל של מכונית קטנה, וילד יכול לזחול דרך העורקים שלו.", "query": "whale ocean deep blue" },
+      { "en": "Your body holds enough carbon to fill nine hundred pencils.", "he": "בגוף שלך יש מספיק פחמן כדי למלא תשע מאות עפרונות.", "query": "human silhouette nature light" },
+      { "en": "Bananas are technically berries, but strawberries technically are not.", "he": "בננה היא טכנית פרי יער, אבל תות שדה טכנית לא.", "query": "fruit market colorful fresh" }
+    ],
+    "fear": { "en": "Most people go their whole life without ever knowing a single one of these facts.", "he": "רוב האנשים עוברים את כל החיים בלי להכיר אף אחת מהעובדות האלה.", "query": "person alone thinking window" },
+    "jealousy": { "en": "The most curious people you know collect facts like this every single day.", "he": "האנשים הכי סקרנים שאתה מכיר אוספים עובדות כאלה כל יום.", "query": "curious person reading book" }
+  }
+]
