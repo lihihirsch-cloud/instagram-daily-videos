@@ -4,8 +4,14 @@ const fs = require('fs');
 const path = require('path');
 
 const BUFFER_TOKEN = process.env.BUFFER_TOKEN;
-const CHANNEL_ID = process.env.BUFFER_CHANNEL_ID || 'YOUR_CHANNEL_ID_HERE';
 const GRAPHQL_URL = 'https://api.buffer.com/graphql';
+
+// Every channel this pipeline posts to. Instagram is required; TikTok is posted to as
+// well when its channel id is configured (BUFFER_TIKTOK_CHANNEL_ID).
+const CHANNELS = [
+  { name: 'instagram', channelId: process.env.BUFFER_CHANNEL_ID || 'YOUR_CHANNEL_ID_HERE', metadata: { instagram: { type: 'reel', shouldShareToFeed: true } } },
+  ...(process.env.BUFFER_TIKTOK_CHANNEL_ID ? [{ name: 'tiktok', channelId: process.env.BUFFER_TIKTOK_CHANNEL_ID, metadata: { tiktok: {} } }] : []),
+];
 
 function gql(query, variables) {
   return new Promise((resolve, reject) => {
@@ -84,7 +90,7 @@ function uploadVideo(filePath) {
 }
 
 // Schedule a post via Buffer GraphQL
-async function schedulePost(videoUrl, caption, scheduledAt) {
+async function schedulePost(channelId, metadata, videoUrl, caption, scheduledAt) {
   const mutation = `
     mutation CreatePost($input: CreatePostInput!) {
       createPost(input: $input) {
@@ -103,14 +109,12 @@ async function schedulePost(videoUrl, caption, scheduledAt) {
 
   const variables = {
     input: {
-      channelId: CHANNEL_ID,
+      channelId,
       text: caption,
       dueAt: scheduledAt,
       schedulingType: 'automatic',
       mode: 'customScheduled',
-      metadata: {
-        instagram: { type: 'reel', shouldShareToFeed: true },
-      },
+      metadata,
       assets: [{ video: { url: videoUrl } }],
     },
   };
@@ -124,14 +128,21 @@ async function uploadAndSchedule(videoPath, caption, scheduledAt) {
   console.log(`  uploaded -> ${videoUrl}`);
 
   console.log(`  scheduling for ${new Date(scheduledAt).toISOString()}...`);
-  const result = await schedulePost(videoUrl, caption, scheduledAt);
-  const payload = result?.createPost;
-  if (payload?.message) {
-    throw new Error(`Buffer error: ${payload.message}`);
+  const posts = [];
+  for (const ch of CHANNELS) {
+    try {
+      const result = await schedulePost(ch.channelId, ch.metadata, videoUrl, caption, scheduledAt);
+      const payload = result?.createPost;
+      if (payload?.message) throw new Error(payload.message);
+      const post = payload?.post;
+      console.log(`  [${ch.name}] scheduled -> post id: ${post?.id} status: ${post?.status}`);
+      posts.push(post);
+    } catch (err) {
+      console.error(`  [${ch.name}] Buffer error: ${err.message}`);
+    }
   }
-  const post = payload?.post;
-  console.log(`  scheduled -> post id: ${post?.id} status: ${post?.status}`);
-  return post;
+  if (!posts.length) throw new Error('Buffer error: failed to schedule on every channel');
+  return posts;
 }
 
 module.exports = { uploadAndSchedule };

@@ -271,5 +271,243 @@
     ],
     "fear": { "en": "Most people go their whole life without ever knowing a single one of these facts.", "he": "רוב האנשים עוברים את כל החיים בלי להכיר אף אחת מהעובדות האלה.", "query": "person alone thinking window" },
     "jealousy": { "en": "The most curious people you know collect facts like this every single day.", "he": "האנשים הכי סקרנים שאתה מכיר אוספים עובדות כאלה כל יום.", "query": "curious person reading book" }
+  },
+  {
+    "id": "micro-habits-trend",
+    "caption": "השיטה הכי ויראלית לשינוי עצמי כרגע היא לא מה שחשבת 🌱 שמרו את זה",
+    "hook": { "en": "The biggest self improvement trend right now is not what you think.", "he": "השיטה הכי ויראלית לשינוי עצמי כרגע היא לא מה שחשבת." },
+    "points": [
+      { "en": "Complicated routines fail because they depend on motivation, and motivation always runs out.", "he": "שגרות מסובכות נכשלות כי הן תלויות במוטיבציה, והמוטיבציה תמיד נגמרת.", "query": "tired person giving up" },
+      { "en": "A habit that takes ten seconds cannot be skipped, so it always gets done.", "he": "הרגל שלוקח עשר שניות אי אפשר לדלג עליו, אז הוא תמיד קורה.", "query": "small step beginning" },
+      { "en": "Put your shoes by the door. Do not decide to run, just put them on.", "he": "תשים נעליים ליד הדלת. אל תחליט לרוץ, רק תנעל אותן.", "query": "running shoes door" },
+      { "en": "One page of a book beats an entire chapter you never actually start.", "he": "עמוד אחד בספר שווה יותר מפרק שלם שאתה אף פעם לא מתחיל.", "query": "reading book cozy light" },
+      { "en": "The habit itself is not the goal. The identity it builds is the real goal.", "he": "ההרגל עצמו הוא לא המטרה. הזהות שהוא בונה היא המטרה האמיתית.", "query": "identity confident growth" },
+      { "en": "People fail big goals not because they aim too high but because they start too big.", "he": "אנשים נכשלים במטרות גדולות לא כי הם שואפים גבוה, אלא כי הם מתחילים גדול מדי.", "query": "overwhelmed person stress" },
+      { "en": "Small consistent action for one year beats a huge burst of motivation for one week.", "he": "פעולה קטנה וקבועה במשך שנה שווה יותר מפרץ מוטיבציה ענק לשבוע.", "query": "consistent daily routine habit" },
+      { "en": "Your brain does not resist a habit that feels too small to even matter.", "he": "המוח שלך לא מתנגד להרגל שמרגיש קטן מכדי שיהיה משנה.", "query": "calm mind peaceful thinking" }
+    ],
+    "fear": { "en": "Most people quit a new habit by day ten because they tried to change too much at once.", "he": "רוב האנשים נוטשים הרגל חדש עד היום העשירי כי הם ניסו לשנות יותר מדי בבת אחת.", "query": "person quitting frustrated" },
+    "jealousy": { "en": "The people who actually transform their life were never the most motivated. They just made it stupidly small.", "he": "האנשים שבאמת משנים את החיים שלהם אף פעם לא היו הכי מוטיבציה. הם פשוט הפכו את זה לקטן מגוחך.", "query": "successful calm person confident" }
+  },
+  {
+    "id": "positive-thinking-myth",
+    "caption": "כל מה שלימדו אתכם על חשיבה חיובית זה בעצם הפוך 🧠 שמרו את זה",
+    "hook": { "en": "Everything you were taught about positive thinking is backwards, and it might be costing you your goals.", "he": "כל מה שלימדו אותך על חשיבה חיובית זה בעצם הפוך, וזה עולה לך במטרות שלך." },
+    "points": [
+      { "en": "A psychologist tested pure positive fantasizing on real goal seekers, and found something disturbing.", "he": "פסיכולוגית בדקה דמיון חיובי טהור על אנשים שרדפו אחרי מטרות, וגילתה משהו מטריד.", "query": "scientist research lab thinking" },
+      { "en": "People who only imagined success lost motivation faster, because their brain already felt like it happened.", "he": "אנשים שדמיינו רק הצלחה איבדו מוטיבציה מהר יותר, כי המוח כבר הרגיש שזה קרה.", "query": "person daydreaming window" },
+      { "en": "Fantasizing about success tricks your brain into relaxing before you have done any of the work.", "he": "לדמיין הצלחה מרדים את המוח שלך עוד לפני שעשית את העבודה בפועל.", "query": "person relaxed comfortable couch" },
+      { "en": "The fix is not positive thinking. It is positive thinking plus the obstacle standing in your way.", "he": "הפתרון הוא לא חשיבה חיובית. הפתרון הוא חשיבה חיובית ועוד המכשול שבדרך.", "query": "obstacle challenge path forward" },
+      { "en": "This method is called mental contrasting, and researchers gave it a simple name: WOOP.", "he": "השיטה נקראת ניגודיות מנטלית, והחוקרים נתנו לה שם פשוט: WOOP.", "query": "notebook writing planning desk" },
+      { "en": "Picture your goal for ten seconds, then picture exactly what will try to stop you.", "he": "תדמיין את המטרה שלך עשר שניות, ואז תדמיין בדיוק מה ינסה לעצור אותך.", "query": "person thinking focused determined" },
+      { "en": "Now write one plan. If the obstacle happens, then this is exactly what I will do.", "he": "עכשיו תכתוב תוכנית אחת. אם המכשול קורה, אז זה בדיוק מה שאני אעשה.", "query": "hand writing plan notebook" },
+      { "en": "This single shift has been shown to double how often people actually follow through.", "he": "השינוי הקטן הזה הוכח להכפיל את הסיכוי שאנשים באמת יתמידו.", "query": "goal achievement finish line success" }
+    ],
+    "fear": { "en": "Every day you keep fantasizing without planning for obstacles, you train your brain to expect success without effort.", "he": "כל יום שאתה ממשיך לדמיין בלי לתכנן מכשולים, אתה מאמן את המוח שלך לצפות להצלחה בלי מאמץ.", "query": "person stuck daydream unproductive" },
+    "jealousy": { "en": "The people actually hitting their goals right now are not the most positive people in the room. They planned for what would go wrong.", "he": "האנשים שבאמת מגיעים למטרות שלהם עכשיו הם לא האנשים הכי חיוביים בחדר. הם תכננו למה שישתבש.", "query": "confident person achievement success" }
+  },
+  {
+    "id": "sleep-hygiene",
+    "caption": "אתה לא עייף. אתה פשוט ישן לא נכון 😴 שמרו את זה",
+    "hook": { "en": "You are not tired because you need more sleep. You are tired because your sleep is broken.", "he": "אתה לא עייף כי אתה צריך יותר שינה. אתה עייף כי השינה שלך שבורה." },
+    "points": [
+      { "en": "Your phone screen tells your brain it is still daytime, so it delays your sleep hormone.", "he": "המסך של הטלפון אומר למוח שלך שעדיין יום, אז הוא דוחה את הורמון השינה.", "query": "phone screen dark bedroom night" },
+      { "en": "Going to sleep at a different time every night confuses your body clock completely.", "he": "ללכת לישון בשעה שונה כל לילה מבלבל לגמרי את השעון הביולוגי שלך.", "query": "clock bedroom night alarm" },
+      { "en": "A cold, dark, and quiet room is worth more than any sleep supplement you can buy.", "he": "חדר קר, חשוך ושקט שווה יותר מכל תוסף שינה שתקנה.", "query": "dark cozy bedroom sleep" },
+      { "en": "Caffeine after two in the afternoon is still in your system when you try to fall asleep.", "he": "קפאין אחרי שתיים בצהריים עדיין נמצא בגוף שלך כשאתה מנסה להירדם.", "query": "coffee cup afternoon light" },
+      { "en": "Your last hour before bed decides how deep your sleep will actually be.", "he": "השעה האחרונה לפני השינה קובעת כמה עמוקה השינה שלך תהיה בפועל.", "query": "calm evening routine relax" },
+      { "en": "Waking up at the same time every day, even on weekends, fixes your sleep faster than anything else.", "he": "להתעורר באותה שעה כל יום, גם בסופי שבוע, מתקן את השינה שלך יותר מכל דבר אחר.", "query": "morning sunrise waking up" },
+      { "en": "A short walk in morning sunlight resets your internal clock better than any app.", "he": "הליכה קצרה באור שמש בבוקר מאפסת את השעון הפנימי שלך יותר טוב מכל אפליקציה.", "query": "morning walk sunlight outdoors" },
+      { "en": "Bad sleep does not just make you tired. It quietly damages memory, mood, and focus.", "he": "שינה גרועה לא רק מעייפת אותך. היא פוגעת בשקט בזיכרון, במצב הרוח ובריכוז.", "query": "person tired stressed morning" }
+    ],
+    "fear": { "en": "Every night of broken sleep quietly steals hours of focus and mood from the next day.", "he": "כל לילה של שינה שבורה גונב בשקט שעות של ריכוז ומצב רוח מהיום הבא.", "query": "exhausted person desk tired" },
+    "jealousy": { "en": "The sharpest, calmest people you know protect their sleep like it is their most important meeting of the day.", "he": "האנשים הכי חדים והכי רגועים שאתה מכיר שומרים על השינה שלהם כאילו זו הפגישה הכי חשובה ביום.", "query": "calm confident person morning" }
+  },
+  {
+    "id": "deep-work-focus",
+    "caption": "למה אתה מרגיש עסוק כל היום ולא מספיק כלום 🎯 שמרו את זה",
+    "hook": { "en": "You can feel busy for eight hours straight and still finish the day having done nothing that matters.", "he": "אתה יכול להרגיש עסוק שמונה שעות ברצף ועדיין לסיים את היום בלי לעשות שום דבר שבאמת חשוב." },
+    "points": [
+      { "en": "Every time you check a notification, your brain needs almost half an hour to focus again.", "he": "בכל פעם שאתה בודק התראה, למוח שלך לוקח כמעט חצי שעה לחזור להתמקד.", "query": "phone notification distraction work" },
+      { "en": "Switching between tasks does not save time. It quietly taxes every single task you touch.", "he": "מעבר בין משימות לא חוסך זמן. הוא גובה מס בשקט מכל משימה שאתה נוגע בה.", "query": "multitasking busy desk chaos" },
+      { "en": "One hour of real focused work can outproduce an entire distracted day.", "he": "שעה אחת של עבודה ממוקדת באמת יכולה להספיק יותר מיום שלם מוסח דעת.", "query": "focused work deep concentration" },
+      { "en": "Put your phone in another room. Willpower alone rarely beats a buzzing screen next to you.", "he": "תשים את הטלפון בחדר אחר. כוח רצון לבד כמעט אף פעם לא מנצח מסך מרטיט לידך.", "query": "phone away desk clean" },
+      { "en": "Block one specific hour for your hardest task, before the world wakes up and starts asking for you.", "he": "תשריין שעה מסוימת למשימה הכי קשה שלך, לפני שהעולם מתעורר ומתחיל לדרוש ממך.", "query": "early morning work quiet" },
+      { "en": "A cluttered desk quietly pulls at your attention even when you think you are ignoring it.", "he": "שולחן עמוס מושך את תשומת הלב שלך בשקט גם כשאתה חושב שאתה מתעלם ממנו.", "query": "clean minimal desk workspace" },
+      { "en": "Decide exactly what done looks like before you start, or the task will expand to fill your whole day.", "he": "תחליט בדיוק איך נראית סיום המשימה לפני שאתה מתחיל, אחרת היא תתפוס לך את כל היום.", "query": "planning task list clarity" },
+      { "en": "Real focus feels boring before it feels powerful. Almost everyone quits right before the payoff.", "he": "ריכוז אמיתי מרגיש משעמם לפני שהוא מרגיש חזק. כמעט כולם מוותרים רגע לפני התגמול.", "query": "person working determined focused" }
+    ],
+    "fear": { "en": "Every day you spend scattered between tabs and notifications is a day your best work never gets made.", "he": "כל יום שאתה מבזבז מפוזר בין טאבים והתראות הוא יום שהעבודה הכי טובה שלך אף פעם לא נוצרת.", "query": "overwhelmed person screens chaos" },
+    "jealousy": { "en": "The people producing the most right now are not working more hours. They are simply not interrupted.", "he": "האנשים שמייצרים הכי הרבה כרגע לא עובדים יותר שעות. פשוט אף אחד לא מפריע להם.", "query": "productive person calm working" }
+  },
+  {
+    "id": "procrastination-science",
+    "caption": "דחיינות היא לא עצלנות, זה משהו אחר לגמרי 🧠 שמרו את זה",
+    "hook": { "en": "Procrastination has almost nothing to do with laziness, and that single fact changes everything.", "he": "דחיינות כמעט ולא קשורה לעצלנות, והעובדה הזו משנה הכל." },
+    "points": [
+      { "en": "You are not delaying the task. You are delaying the uncomfortable feeling that the task brings up.", "he": "אתה לא דוחה את המשימה. אתה דוחה את התחושה הלא נעימה שהמשימה מעלה.", "query": "person anxious avoiding work" },
+      { "en": "Your brain will always choose an easy, instant reward over a hard, distant one.", "he": "המוח שלך תמיד יבחר תגמול קל ומיידי על פני תגמול קשה ורחוק.", "query": "phone scrolling instant reward" },
+      { "en": "A task that feels huge and vague triggers avoidance. A task that feels tiny and clear does not.", "he": "משימה שמרגישה ענקית ומעורפלת מעוררת הימנעות. משימה שמרגישה קטנה וברורה לא.", "query": "overwhelmed vague task confusion" },
+      { "en": "Shrink the task until starting feels almost stupidly easy, and the resistance quietly disappears.", "he": "תקטין את המשימה עד שההתחלה מרגישה כמעט מגוחכת בקלות שלה, וההתנגדות נעלמת בשקט.", "query": "small first step easy start" },
+      { "en": "The first two minutes are the hardest part of almost anything. After that, momentum does the work.", "he": "שתי הדקות הראשונות הן החלק הכי קשה כמעט בכל דבר. אחר כך, התנופה עושה את העבודה.", "query": "momentum starting motion beginning" },
+      { "en": "Remove the option to procrastinate by making the task the only thing in front of you.", "he": "תסיר את האפשרות לדחות על ידי כך שהמשימה תהיה הדבר היחיד שמול העיניים שלך.", "query": "single task focused environment" },
+      { "en": "Future you always assumes present you will feel more motivated tomorrow. Future you is almost always wrong.", "he": "האני העתידי שלך תמיד מניח שהאני הנוכחי ירגיש יותר מוטיבציה מחר. הוא כמעט תמיד טועה.", "query": "person thinking tomorrow future" },
+      { "en": "Forgiving yourself for procrastinating in the past actually makes you less likely to do it again.", "he": "לסלוח לעצמך על דחיינות בעבר בפועל מקטין את הסיכוי שתעשה את זה שוב.", "query": "self compassion peaceful calm" }
+    ],
+    "fear": { "en": "Every task you push off does not disappear. It just waits, quietly, and grows heavier with time.", "he": "כל משימה שאתה דוחה לא נעלמת. היא פשוט מחכה בשקט, ונהיית כבדה יותר עם הזמן.", "query": "pile of work stress growing" },
+    "jealousy": { "en": "The people who seem to just get things done are not more disciplined. They just made starting easier.", "he": "האנשים שנראה שפשוט מבצעים דברים הם לא יותר ממושמעים. הם פשוט הפכו את ההתחלה לקלה יותר.", "query": "productive person accomplished success" }
+  },
+  {
+    "id": "delayed-gratification",
+    "caption": "ניסוי המרשמלו חושף למה חלק מצליחים ואחרים לא 🍬 שמרו את זה",
+    "hook": { "en": "A famous experiment with kids and a marshmallow predicted their entire future, and the reason is not what you think.", "he": "ניסוי מפורסם עם ילדים ומרשמלו חזה את כל העתיד שלהם, והסיבה היא לא מה שאתה חושב." },
+    "points": [
+      { "en": "Researchers left a child alone with one marshmallow, promising two if they waited fifteen minutes.", "he": "חוקרים השאירו ילד לבד עם מרשמלו אחד, והבטיחו שניים אם הוא יחכה חמש עשרה דקות.", "query": "child waiting patience test" },
+      { "en": "Decades later, the children who waited had better careers, health, and relationships than the ones who did not.", "he": "עשרות שנים אחר כך, הילדים שחיכו הגיעו לקריירה, בריאות ומערכות יחסים טובות יותר מאלה שלא.", "query": "successful adult career achievement" },
+      { "en": "The kids who waited were not more disciplined. They simply looked away from the marshmallow.", "he": "הילדים שחיכו לא היו יותר ממושמעים. הם פשוט הסתכלו הצידה מהמרשמלו.", "query": "child looking away distraction" },
+      { "en": "Willpower is weak against temptation you can see. It is strong against temptation you cannot.", "he": "כוח רצון חלש מול פיתוי שאתה רואה. הוא חזק מול פיתוי שאתה לא רואה.", "query": "temptation hidden out of sight" },
+      { "en": "Put the temptation out of sight, and the decision becomes almost automatic.", "he": "תוציא את הפיתוי מהעין, וההחלטה הופכת כמעט אוטומטית.", "query": "clean space no distraction" },
+      { "en": "Every small moment you delay a reward today, you are training the exact same muscle.", "he": "בכל רגע קטן שאתה דוחה תגמול היום, אתה מאמן בדיוק את אותו שריר.", "query": "training discipline growth practice" },
+      { "en": "The two marshmallow reward was never about the candy. It was about trusting the future would actually come.", "he": "שני המרשמלו מעולם לא היו קשורים לממתק. הם היו קשורים לאמון שהעתיד באמת יגיע.", "query": "trust future hope patience" },
+      { "en": "People who delay gratification are not sacrificing happiness. They are simply choosing a bigger happiness later.", "he": "אנשים שדוחים סיפוקים לא מקריבים אושר. הם פשוט בוחרים אושר גדול יותר מאוחר יותר.", "query": "happy fulfilled person success" }
+    ],
+    "fear": { "en": "Every instant reward you grab today quietly trades away a bigger reward you will never get to have.", "he": "כל תגמול מיידי שאתה תופס היום מחליף בשקט תגמול גדול יותר שלעולם לא תקבל.", "query": "regret missed opportunity person" },
+    "jealousy": { "en": "The people building the life you want are not the ones enjoying every reward right now. They are the ones waiting for the real one.", "he": "האנשים שבונים את החיים שאתה רוצה הם לא אלה שנהנים מכל תגמול עכשיו. הם אלה שמחכים לתגמול האמיתי.", "query": "confident person patient success" }
+  },
+  {
+    "id": "comparison-trap-social-media",
+    "caption": "אתה משווה את הבמאחורי הקלעים שלך לרולים המושלמים של כולם 📱 שמרו את זה",
+    "hook": { "en": "You are comparing your behind the scenes to everyone else's perfectly edited highlight reel, and it is quietly destroying you.", "he": "אתה משווה את מאחורי הקלעים שלך לרולים המושלמים והערוכים של כולם, וזה הורס אותך בשקט." },
+    "points": [
+      { "en": "Nobody posts the failed attempt, the argument, or the boring ordinary Tuesday afternoon.", "he": "אף אחד לא מפרסם את הניסיון שנכשל, את הריב, או את יום שלישי הרגיל והמשעמם.", "query": "boring ordinary day life" },
+      { "en": "Every feed you scroll is a curated highlight reel, edited and selected to look effortless.", "he": "כל פיד שאתה גולל הוא רולים ערוכים ונבחרים בקפידה כדי להיראות קלים וללא מאמץ.", "query": "phone scrolling social media feed" },
+      { "en": "Comparing your entire life to someone's single best moment is a math problem you can never win.", "he": "להשוות את כל החיים שלך לרגע הכי טוב של מישהו אחר זו בעיית חשבון שאי אפשר לנצח.", "query": "comparison unfair scale imbalance" },
+      { "en": "The people you envy online are almost certainly comparing themselves to somebody else too.", "he": "האנשים שאתה מקנא בהם ברשת כמעט בוודאות משווים את עצמם למישהו אחר גם כן.", "query": "person insecure comparing anxious" },
+      { "en": "Every minute spent comparing is a minute not spent building the thing you actually want.", "he": "כל דקה שמושקעת בהשוואה היא דקה שלא הושקעה בבניית הדבר שאתה באמת רוצה.", "query": "person building working focused" },
+      { "en": "Unfollow the accounts that make you feel small. Your feed should build you up, not drain you.", "he": "תפסיק לעקוב אחרי חשבונות שגורמים לך להרגיש קטן. הפיד שלך צריך לבנות אותך, לא לרוקן אותך.", "query": "clean phone digital wellness" },
+      { "en": "Your only real competition is the version of you from yesterday, nobody else.", "he": "המתחרה היחיד האמיתי שלך הוא הגרסה שלך מאתמול, אף אחד אחר.", "query": "self improvement growth progress" },
+      { "en": "The moment you stop comparing is the exact moment you finally start noticing your own progress.", "he": "הרגע שבו אתה מפסיק להשוות הוא בדיוק הרגע שבו אתה סוף סוף שם לב להתקדמות שלך.", "query": "person happy progress satisfied" }
+    ],
+    "fear": { "en": "Every hour spent comparing your life to a curated feed is an hour stolen from actually living yours.", "he": "כל שעה שמושקעת בהשוואת החיים שלך לפיד ערוך היא שעה שנגנבה מלחיות את החיים שלך בפועל.", "query": "wasted time phone scrolling regret" },
+    "jealousy": { "en": "The people who seem the most at peace right now are not winning the comparison game. They simply stopped playing it.", "he": "האנשים שנראים הכי רגועים כרגע לא מנצחים במשחק ההשוואות. הם פשוט הפסיקו לשחק בו.", "query": "peaceful calm person content" }
+  },
+  {
+    "id": "boundaries-saying-no",
+    "caption": "כל \"כן\" שאתה אומר בלי לחשוב זה \"לא\" למשהו אחר 🚫 שמרו את זה",
+    "hook": { "en": "Every time you say yes without thinking, you are quietly saying no to something that actually matters to you.", "he": "בכל פעם שאתה אומר כן בלי לחשוב, אתה אומר בשקט לא למשהו שבאמת חשוב לך." },
+    "points": [
+      { "en": "People who cannot say no are not kinder. They are simply more afraid of disappointing someone.", "he": "אנשים שלא יודעים להגיד לא הם לא יותר טובי לב. הם פשוט יותר מפוחדים לאכזב מישהו.", "query": "person stressed overwhelmed anxious" },
+      { "en": "Saying yes to everything is actually a slow way of saying no to your own priorities.", "he": "להגיד כן לכל דבר זו בעצם דרך איטית להגיד לא לסדר העדיפויות שלך.", "query": "overwhelmed busy schedule stress" },
+      { "en": "A boundary is not a wall to keep people out. It is a fence that protects what matters inside.", "he": "גבול הוא לא חומה שמרחיקה אנשים. הוא גדר שמגנה על מה שחשוב בפנים.", "query": "fence protection boundary calm" },
+      { "en": "You do not owe anyone an explanation for protecting your own time and energy.", "he": "אתה לא חייב לאף אחד הסבר על כך שאתה מגן על הזמן והאנרגיה שלך.", "query": "confident person calm assertive" },
+      { "en": "The discomfort of saying no now is smaller than the resentment of saying yes and regretting it later.", "he": "אי הנוחות של להגיד לא עכשיו קטנה יותר מהתרעומת של להגיד כן ולהתחרט אחר כך.", "query": "person thinking decision difficult" },
+      { "en": "People who respect you will respect your boundary. The ones who do not were the reason you needed one.", "he": "אנשים שמכבדים אותך יכבדו את הגבול שלך. אלה שלא, הם הסיבה שהיית צריך אותו מלכתחילה.", "query": "respect relationship healthy boundary" },
+      { "en": "A simple sentence like let me think about it buys you time to answer from choice, not pressure.", "he": "משפט פשוט כמו תן לי לחשוב על זה קונה לך זמן לענות מתוך בחירה, לא מתוך לחץ.", "query": "person thinking calm decision" },
+      { "en": "Every boundary you finally set is a message to yourself that your time actually matters.", "he": "כל גבול שאתה סוף סוף שם הוא מסר לעצמך שהזמן שלך באמת חשוב.", "query": "self respect confident calm" }
+    ],
+    "fear": { "en": "Every boundary you fail to set today is exhaustion you are quietly signing up for tomorrow.", "he": "כל גבול שאתה לא שם היום הוא תשישות שאתה נרשם אליה בשקט למחר.", "query": "exhausted burnout tired person" },
+    "jealousy": { "en": "The calmest, most respected people you know are not the ones who say yes the most. They are the ones who say no clearly.", "he": "האנשים הכי רגועים והכי מכובדים שאתה מכיר הם לא אלה שאומרים הכי הרבה כן. הם אלה שאומרים לא בבירור.", "query": "calm confident respected person" }
+  },
+  {
+    "id": "growth-mindset",
+    "caption": "המילה שאתה מוסיף לסוף המשפט משנה את כל החיים שלך 🌱 שמרו את זה",
+    "hook": { "en": "One tiny word added to the end of a sentence can quietly rewrite your entire relationship with failure.", "he": "מילה קטנה אחת שמתווספת לסוף המשפט יכולה לשנות בשקט את כל היחס שלך לכישלון." },
+    "points": [
+      { "en": "Saying I am not good at this yet changes the entire meaning compared to just saying I am not good at this.", "he": "להגיד אני לא טוב בזה עדיין משנה לגמרי את המשמעות בהשוואה להגיד סתם אני לא טוב בזה.", "query": "person learning practicing growth" },
+      { "en": "A fixed mindset treats ability as something you either have or you do not.", "he": "חשיבה קבועה מתייחסת ליכולת כמשהו שיש לך או שאין לך.", "query": "person stuck limited fixed" },
+      { "en": "A growth mindset treats ability as a skill built through effort, the exact same way a muscle is built.", "he": "חשיבת צמיחה מתייחסת ליכולת כמיומנות שנבנית דרך מאמץ, בדיוק כמו ששריר נבנה.", "query": "muscle training building strength" },
+      { "en": "Praise the effort and the strategy, not just the result, and watch how much more people try.", "he": "תשבח את המאמץ ואת האסטרטגיה, לא רק את התוצאה, ותראה כמה יותר אנשים מנסים.", "query": "encouragement effort praise support" },
+      { "en": "Every skill that looks natural to someone else was once clumsy, slow, and embarrassing for them too.", "he": "כל כישרון שנראה טבעי אצל מישהו אחר היה פעם מגושם, איטי ומביך גם אצלו.", "query": "beginner learning clumsy practice" },
+      { "en": "Failure is not proof you cannot do something. It is proof you are attempting something hard enough to matter.", "he": "כישלון הוא לא הוכחה שאתה לא מסוגל. הוא הוכחה שאתה מנסה משהו שקשה מספיק כדי שיהיה חשוב.", "query": "person trying hard determined" },
+      { "en": "The moment you get curious about your mistake instead of ashamed of it, you start actually improving.", "he": "ברגע שאתה נהיה סקרן לגבי הטעות שלך במקום מתבייש בה, אתה מתחיל באמת להשתפר.", "query": "curious learning mistake analysis" },
+      { "en": "People with a growth mindset are not more talented. They just never stopped believing talent could grow.", "he": "אנשים עם חשיבת צמיחה הם לא יותר מוכשרים. הם פשוט אף פעם לא הפסיקו להאמין שכישרון יכול לגדול.", "query": "person confident growing success" }
+    ],
+    "fear": { "en": "Every time you say I am just not a person, you quietly close a door that effort could have opened.", "he": "בכל פעם שאתה אומר אני פשוט לא בנאדם כזה, אתה סוגר בשקט דלת שמאמץ יכל לפתוח.", "query": "closed door missed opportunity" },
+    "jealousy": { "en": "The people improving the fastest right now are not the most talented in the room. They are the ones still willing to look bad while learning.", "he": "האנשים שמשתפרים הכי מהר כרגע הם לא הכי מוכשרים בחדר. הם אלה שעדיין מוכנים להיראות רע בזמן שהם לומדים.", "query": "person practicing determined growth" }
+  },
+  {
+    "id": "comfort-zone-discomfort",
+    "caption": "כל מה שאתה רוצה נמצא ממש מעבר לאזור הנוחות שלך 🔥 שמרו את זה",
+    "hook": { "en": "Almost everything you actually want in life is sitting just outside your comfort zone, waiting.", "he": "כמעט כל מה שאתה באמת רוצה בחיים נמצא ממש מחוץ לאזור הנוחות שלך, מחכה." },
+    "points": [
+      { "en": "Your comfort zone is not dangerous. It is just designed to keep you exactly the same forever.", "he": "אזור הנוחות שלך הוא לא מסוכן. הוא פשוט מתוכנן לשמור אותך בדיוק אותו הדבר לנצח.", "query": "comfortable couch stagnant calm" },
+      { "en": "Discomfort is not a sign that something is wrong. It is usually a sign that you are growing.", "he": "אי נוחות היא לא סימן שמשהו לא בסדר. היא בדרך כלל סימן שאתה גדל.", "query": "challenge growth difficult effort" },
+      { "en": "The version of you that you want to become does not exist inside your current routine.", "he": "הגרסה שלך שאתה רוצה להיות לא קיימת בתוך השגרה הנוכחית שלך.", "query": "future self transformation change" },
+      { "en": "Small, deliberate discomfort, done often, builds a tolerance that eventually feels like confidence.", "he": "אי נוחות קטנה ומכוונת, שנעשית לעיתים קרובות, בונה סבילות שבסופו של דבר מרגישה כמו ביטחון.", "query": "cold shower discipline challenge" },
+      { "en": "Avoiding every uncomfortable conversation does not remove the problem. It just makes it bigger and quieter.", "he": "להימנע מכל שיחה לא נוחה לא מסיר את הבעיה. זה רק הופך אותה לגדולה ושקטה יותר.", "query": "difficult conversation avoidance tension" },
+      { "en": "The fear you feel before doing something hard is almost always louder than the actual difficulty.", "he": "הפחד שאתה מרגיש לפני שאתה עושה משהו קשה כמעט תמיד רועש יותר מהקושי בפועל.", "query": "person nervous before challenge" },
+      { "en": "People who seem fearless are not actually fearless. They just do the thing while still afraid.", "he": "אנשים שנראים חסרי פחד הם לא באמת חסרי פחד. הם פשוט עושים את הדבר בזמן שהם עדיין מפחדים.", "query": "brave person facing fear" },
+      { "en": "Every time you choose discomfort on purpose, the edge of your comfort zone quietly moves forward.", "he": "בכל פעם שאתה בוחר באי נוחות בכוונה, הקצה של אזור הנוחות שלך זז בשקט קדימה.", "query": "person expanding limits growth" }
+    ],
+    "fear": { "en": "Every year you stay fully inside your comfort zone is a year the life you actually want stays exactly out of reach.", "he": "כל שנה שאתה נשאר לגמרי בתוך אזור הנוחות שלך היא שנה שהחיים שאתה באמת רוצה נשארים מחוץ להישג יד.", "query": "stuck same place unchanged" },
+    "jealousy": { "en": "The people living the life you envy are not more talented or more lucky. They were simply willing to feel uncomfortable more often.", "he": "האנשים שחיים את החיים שאתה מקנא בהם הם לא יותר מוכשרים או בני מזל. הם פשוט היו מוכנים להרגיש לא נוח יותר פעמים.", "query": "successful person confident bold" }
+  },
+  {
+    "id": "environment-design",
+    "caption": "אתה לא צריך יותר כוח רצון, אתה צריך סביבה אחרת 🏠 שמרו את זה",
+    "hook": { "en": "You probably do not need more willpower. You need to redesign the environment that is quietly defeating you every day.", "he": "כנראה שאתה לא צריך יותר כוח רצון. אתה צריך לעצב מחדש את הסביבה שמנצחת אותך בשקט כל יום." },
+    "points": [
+      { "en": "Willpower is a limited, exhausting resource. Your environment works for you all day without getting tired.", "he": "כוח רצון הוא משאב מוגבל ומתיש. הסביבה שלך עובדת בשבילך כל היום בלי להתעייף.", "query": "tired willpower exhausted person" },
+      { "en": "If the junk food is not in the house, willpower is not even part of the equation anymore.", "he": "אם האוכל הלא בריא לא נמצא בבית, כוח הרצון כבר לא חלק מהמשוואה בכלל.", "query": "healthy kitchen clean fridge" },
+      { "en": "Put your phone charger far from your bed, and getting up in the morning stops being a negotiation.", "he": "תשים את המטען של הטלפון רחוק מהמיטה, וקימה בבוקר מפסיקה להיות משא ומתן.", "query": "bedroom phone away morning" },
+      { "en": "Leave your gym clothes out the night before, and the decision has already quietly been made for you.", "he": "תשאיר את בגדי האימון בחוץ בלילה הקודם, וההחלטה כבר התקבלה בשבילך בשקט.", "query": "gym clothes ready morning" },
+      { "en": "Every object in your space is either pulling you toward your goal or quietly pulling you away from it.", "he": "כל חפץ במרחב שלך או מושך אותך לכיוון המטרה שלך, או מושך אותך ממנה בשקט.", "query": "organized space intentional clean" },
+      { "en": "Make the good choice the easy choice, and make the bad choice require actual effort to reach.", "he": "תהפוך את הבחירה הטובה לבחירה הקלה, ותהפוך את הבחירה הרעה לכזו שדורשת מאמץ ממשי.", "query": "easy path clear choice" },
+      { "en": "A cluttered environment does not just look messy. It quietly drains your focus before you even start working.", "he": "סביבה עמוסה לא רק נראית מבולגנת. היא מרוקנת בשקט את הריכוז שלך עוד לפני שהתחלת לעבוד.", "query": "cluttered messy desk overwhelm" },
+      { "en": "Change your space once, deliberately, and the right behavior becomes the default instead of the struggle.", "he": "תשנה את המרחב שלך פעם אחת, בכוונה, וההתנהגות הנכונה הופכת לברירת מחדל במקום למאבק.", "query": "organized clean intentional space" }
+    ],
+    "fear": { "en": "Every day your environment stays designed for your old habits is a day your willpower fights a battle it cannot win.", "he": "כל יום שהסביבה שלך נשארת מעוצבת להרגלים הישנים שלך הוא יום שכוח הרצון שלך נלחם בקרב שהוא לא יכול לנצח.", "query": "person struggling temptation fight" },
+    "jealousy": { "en": "The most consistent people you know are not fighting temptation all day. They simply removed it from the room.", "he": "האנשים הכי עקביים שאתה מכיר לא נלחמים בפיתוי כל היום. הם פשוט הוציאו אותו מהחדר.", "query": "calm organized confident person" }
+  },
+  {
+    "id": "decision-fatigue",
+    "caption": "אנשים מצליחים לובשים אותו דבר כל יום, והסיבה תפתיע אותך 👔 שמרו את זה",
+    "hook": { "en": "Some of the most successful people alive wear almost the exact same outfit every single day, and the reason is not laziness.", "he": "חלק מהאנשים הכי מצליחים בעולם לובשים כמעט את אותו לבוש בכל יום, והסיבה היא לא עצלנות." },
+    "points": [
+      { "en": "Every single decision you make today, no matter how small, quietly drains the same mental battery.", "he": "כל החלטה שאתה מקבל היום, לא משנה כמה קטנה, מרוקנת בשקט את אותה סוללה מנטלית.", "query": "person overwhelmed choices decisions" },
+      { "en": "By the afternoon, that same battery is why good decisions suddenly feel so much harder.", "he": "עד אחר הצהריים, אותה סוללה היא הסיבה שהחלטות טובות פתאום מרגישות הרבה יותר קשות.", "query": "tired afternoon mental exhaustion" },
+      { "en": "Removing small decisions, like what to wear or what to eat for breakfast, saves that energy for what matters.", "he": "הסרת החלטות קטנות, כמו מה ללבוש או מה לאכול לארוחת בוקר, שומרת את האנרגיה הזו למה שחשוב.", "query": "simple routine minimal choices" },
+      { "en": "This is why judges are statistically more lenient earlier in the day than right before their lunch break.", "he": "זו הסיבה ששופטים סטטיסטית סלחניים יותר מוקדם ביום מאשר ממש לפני הפסקת הצהריים שלהם.", "query": "courtroom judge decision fatigue" },
+      { "en": "Make your most important decision of the day the very first one, while your battery is still full.", "he": "תקבל את ההחלטה הכי חשובה של היום ראשונה, כשהסוללה שלך עדיין מלאה.", "query": "morning decision clear mind" },
+      { "en": "A simple routine is not boring. It is a strategic way of protecting your best thinking for later.", "he": "שגרה פשוטה היא לא משעממת. היא דרך אסטרטגית לשמור על החשיבה הכי טובה שלך למאוחר יותר.", "query": "simple routine structured calm" },
+      { "en": "Plan tomorrow's small decisions tonight, and you wake up with a full battery and a clear path.", "he": "תתכנן את ההחלטות הקטנות של מחר הערב, ותתעורר עם סוללה מלאה ומסלול ברור.", "query": "planning night before organized" },
+      { "en": "Protecting your decision energy is not about discipline. It is about knowing exactly where to spend it.", "he": "לשמור על אנרגיית ההחלטות שלך זה לא עניין של משמעת. זה עניין של לדעת בדיוק איפה להשקיע אותה.", "query": "focused clear priorities success" }
+    ],
+    "fear": { "en": "Every unnecessary decision you make early in the day is energy stolen from the decision that actually matters later.", "he": "כל החלטה מיותרת שאתה מקבל מוקדם ביום היא אנרגיה שנגנבה מההחלטה שבאמת חשובה מאוחר יותר.", "query": "drained tired person choices" },
+    "jealousy": { "en": "The sharpest decision makers you know are not thinking harder than you. They simply have far fewer decisions to make.", "he": "מקבלי ההחלטות הכי חדים שאתה מכיר לא חושבים יותר קשה ממך. פשוט יש להם הרבה פחות החלטות לקבל.", "query": "confident clear minded person" }
+  },
+  {
+    "id": "gratitude-practice",
+    "caption": "המוח שלך מתוכנת להתמקד במה שחסר לך, לא במה שיש לך 🙏 שמרו את זה",
+    "hook": { "en": "Your brain is wired by default to notice what is missing in your life, never what is already there.", "he": "המוח שלך מתוכנת כברירת מחדל לשים לב למה שחסר בחיים שלך, אף פעם לא למה שכבר יש." },
+    "points": [
+      { "en": "This is called negativity bias, an ancient survival tool that is now mostly just making you miserable.", "he": "זה נקרא הטיית שליליות, כלי הישרדות עתיק שהיום בעיקר גורם לך להיות אומלל.", "query": "person worried anxious thinking" },
+      { "en": "Writing down three specific good things daily has been shown to measurably shift your mood over time.", "he": "כתיבה יומית של שלושה דברים טובים ומדויקים הוכחה כמשנה את מצב הרוח שלך לאורך זמן.", "query": "journal writing gratitude notebook" },
+      { "en": "Vague gratitude like I am thankful for my family barely registers. Specific gratitude actually rewires attention.", "he": "הכרת תודה מעורפלת כמו אני מודה על המשפחה שלי בקושי נרשמת. הכרת תודה ספציפית באמת משנה את תשומת הלב.", "query": "specific detail focus attention" },
+      { "en": "Gratitude does not ignore your problems. It simply stops your problems from being the only thing you see.", "he": "הכרת תודה לא מתעלמת מהבעיות שלך. היא פשוט מפסיקה לתת לבעיות להיות הדבר היחיד שאתה רואה.", "query": "balanced perspective calm clarity" },
+      { "en": "Telling someone specifically why you appreciate them rewires both your brain and theirs at the same time.", "he": "לספר למישהו במפורש למה אתה מעריך אותו משנה גם את המוח שלך וגם את שלו באותו הזמן.", "query": "appreciation connection warm relationship" },
+      { "en": "People who practice gratitude regularly report better sleep, less anxiety, and stronger relationships.", "he": "אנשים שמתרגלים הכרת תודה באופן קבוע מדווחים על שינה טובה יותר, פחות חרדה, ומערכות יחסים חזקות יותר.", "query": "happy peaceful person relationship" },
+      { "en": "Gratitude is not a feeling you wait for. It is a skill you build by practicing it on purpose.", "he": "הכרת תודה היא לא רגש שאתה מחכה לו. היא מיומנות שאתה בונה על ידי תרגול מכוון.", "query": "practice skill building daily" },
+      { "en": "The version of you who notices what is already good is the version who finally feels like enough.", "he": "הגרסה שלך ששמה לב למה שכבר טוב היא הגרסה שסוף סוף מרגישה מספיקה.", "query": "content peaceful fulfilled person" }
+    ],
+    "fear": { "en": "Every day you focus only on what is missing is a day the good things already in your life go quietly unnoticed.", "he": "כל יום שאתה מתמקד רק במה שחסר הוא יום שהדברים הטובים שכבר יש בחיים שלך עוברים בלי לב.", "query": "missed unnoticed good moment" },
+    "jealousy": { "en": "The most content people you know are not the ones who have the most. They are the ones who notice the most.", "he": "האנשים הכי מרוצים שאתה מכיר הם לא אלה שיש להם הכי הרבה. הם אלה ששמים לב להכי הרבה.", "query": "content grateful happy person" }
+  },
+  {
+    "id": "digital-detox-phone",
+    "caption": "אתה בודק את הטלפון פי כך וכך ביום, וזה עולה לך יותר ממה שאתה חושב 📵 שמרו את זה",
+    "hook": { "en": "The average person checks their phone over a hundred times a day, and it is quietly costing far more than time.", "he": "האדם הממוצע בודק את הטלפון שלו מעל מאה פעם ביום, וזה עולה בשקט הרבה יותר מזמן." },
+    "points": [
+      { "en": "Apps are deliberately engineered by teams of psychologists to be as hard to put down as possible.", "he": "אפליקציות מתוכננות בכוונה על ידי צוותי פסיכולוגים כדי שיהיה הכי קשה להניח אותן.", "query": "phone addiction app design" },
+      { "en": "The small red notification bubble is designed specifically to create anxiety until you tap it away.", "he": "העיגול האדום הקטן של ההתראה מתוכנן במיוחד כדי ליצור חרדה עד שאתה נוגע בו.", "query": "phone notification red anxiety" },
+      { "en": "Every scroll gives your brain a tiny, unpredictable reward, the exact same mechanism that makes slot machines addictive.", "he": "כל גלילה נותנת למוח שלך תגמול קטן ובלתי צפוי, בדיוק אותו מנגנון שהופך מכונות מזל להתמכרות.", "query": "slot machine reward addiction" },
+      { "en": "Turning your screen to grayscale removes most of the color triggers designed to keep you scrolling.", "he": "הפיכת המסך לשחור לבן מסירה את רוב טריגרי הצבע שנועדו לגרום לך להמשיך לגלול.", "query": "phone grayscale minimal screen" },
+      { "en": "Deleting one addictive app for a single week is usually enough to notice how much time it was quietly stealing.", "he": "מחיקת אפליקציה אחת ממכרת לשבוע אחד בדרך כלל מספיקה כדי לשים לב כמה זמן היא גנבה בשקט.", "query": "phone deleted app freedom" },
+      { "en": "The first hour after waking up sets your entire nervous system for the day, do not hand it to your phone.", "he": "השעה הראשונה אחרי ההתעוררות קובעת את מצב מערכת העצבים שלך לכל היום, אל תמסור אותה לטלפון.", "query": "calm morning without phone" },
+      { "en": "Boredom is not a problem to escape. It is where your best, most original ideas actually come from.", "he": "שעמום הוא לא בעיה שצריך לברוח ממנה. משם באות בפועל הרעיונות הכי טובים והכי מקוריים שלך.", "query": "person thinking daydreaming creative" },
+      { "en": "The people who feel calmest today are not the ones with the most apps. They are the ones with the least.", "he": "האנשים שמרגישים הכי רגועים היום הם לא אלה עם הכי הרבה אפליקציות. הם אלה עם הכי מעט.", "query": "calm peaceful person phone free" }
+    ],
+    "fear": { "en": "Every hour lost to mindless scrolling is an hour that never comes back, and your future self will feel the absence.", "he": "כל שעה שאבדה לגלילה חסרת מחשבה היא שעה שלא חוזרת, והאני העתידי שלך ירגיש את החוסר.", "query": "wasted time phone regret" },
+    "jealousy": { "en": "The people who seem the most present and alive right now are not disciplined superhumans. They just put the phone down first.", "he": "האנשים שנראים הכי נוכחים וחיים כרגע הם לא על אנושיים ממושמעים. הם פשוט הניחו את הטלפון קודם.", "query": "present engaged happy person" }
   }
 ]

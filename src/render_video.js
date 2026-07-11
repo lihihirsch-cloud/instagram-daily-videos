@@ -23,7 +23,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const crypto = require('crypto');
-const { execFileSync } = require('child_process');
+const { execFileSync, spawnSync } = require('child_process');
 const { MsEdgeTTS, OUTPUT_FORMAT } = require('msedge-tts');
 
 // Free Microsoft Edge neural TTS -> writes mp3, returns word timings [{t,d} in seconds].
@@ -127,6 +127,17 @@ function tc(sec) {
   return `${h}:${String(m).padStart(2, '0')}:${s.toFixed(2).padStart(5, '0')}`;
 }
 
+// How much dead air sits before speech actually starts, so we can trim it and make
+// sure the hook lands the instant the video does (no delay before anything happens).
+function detectLeadingSilenceSec(audioPath) {
+  const res = spawnSync(FFMPEG, ['-i', audioPath, '-af', 'silencedetect=noise=-40dB:d=0.05', '-f', 'null', '-'], { encoding: 'utf8' });
+  const out = (res.stderr || '') + (res.stdout || '');
+  const startMatch = out.match(/silence_start:\s*(-?[\d.]+)/);
+  const endMatch = out.match(/silence_end:\s*([\d.]+)/);
+  if (startMatch && parseFloat(startMatch[1]) < 0.05 && endMatch) return parseFloat(endMatch[1]);
+  return 0;
+}
+
 // Generates a short, calm procedural melody loop (pentatonic scale, random root and
 // note pattern per video) so there's no licensing concern and each render sounds a
 // little different. Each note is a warm plucked tone (fundamental + 2 soft harmonics)
@@ -204,6 +215,18 @@ function generateMelody(durationSec, outPath) {
   // contiguous boundaries: clip/subtitle i runs from its start to the NEXT one's start (last -> TOTAL)
   segs.forEach((s, i) => { s.dstart = (i === 0) ? 0 : s.tstart; s.dend = (i < segs.length - 1) ? segs[i + 1].tstart : TOTAL; });
 
+  // trim any dead air before the first word so the hook starts the instant the video does
+  const leadSilence = detectLeadingSilenceSec(voicePath);
+  if (leadSilence > 0.08) {
+    console.log(`Trimming ${leadSilence.toFixed(2)}s of leading silence (no delay before the hook).`);
+    const trimmedPath = path.join(WORK, 'voice_trimmed.mp3');
+    ff(['-i', voicePath, '-ss', leadSilence.toFixed(3), '-c', 'copy', trimmedPath], WORK);
+    fs.copyFileSync(trimmedPath, voicePath);
+    segs.forEach((s) => { s.tstart = Math.max(0, s.tstart - leadSilence); s.tend = Math.max(0, s.tend - leadSilence); });
+    TOTAL = Math.max(1, TOTAL - leadSilence);
+    segs.forEach((s, i) => { s.dstart = (i === 0) ? 0 : s.tstart; s.dend = (i < segs.length - 1) ? segs[i + 1].tstart : TOTAL; });
+  }
+
   console.log(`Voiceover ${voiceDur.toFixed(2)}s; video length ${TOTAL.toFixed(2)}s across ${segs.length} segments.`);
 
   // 2b) background music bed — always on. Uses an explicit C.musicFile override if
@@ -219,47 +242,129 @@ function generateMelody(durationSec, outPath) {
     console.log('Generated calm background melody.');
   }
 
-  // 3) fetch a Pixabay clip per segment, normalize to its exact duration
-  console.log('Fetching clips + building segments...');
+  // split each segment's Hebrew line into 4-5 word caption chunks, and build a flat
+  // list of "shots" — one Pixabay clip per caption change, not per whole segment —
+  // so the visual cuts every time the on-screen text does. Exception: the CTA (last
+  // segment) is NOT chunked — it stays on screen as one static multi-line block.
+  const stripEmoji = (t) => t.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}]/gu, '');
+  const oneLine = (t) => stripEmoji(t).replace(/\n+/g, ' ').replace(/[ \t]+/g, ' ').trim();
+  const DEF_FONT = 68;      // matches the Def style fontsize below — kept in sync intentionally
+  const CHAR_RATIO = 0.35;  // empirical avg glyph width / fontSize for Arial Bold Hebrew, calibrated against rendered frames
+  const SAFE_W = W - 240;   // Def style MarginL(120) + MarginR(120)
+  // if a line is estimated to be wider than the safe frame area, split it into 2
+  // lines instead of letting it run off the edge — the font size never changes.
+  const wrapLineIfTooWide = (line) => {
+    const est = line.length * CHAR_RATIO * DEF_FONT;
+    if (est <= SAFE_W) return [line];
+    const ws = line.split(' ');
+    if (ws.length < 2) return [line];
+    const mid = Math.ceil(ws.length / 2);
+    return [ws.slice(0, mid).join(' '), ws.slice(mid).join(' ')];
+  };
+  const MAX_WORDS = 5, MIN_WORDS = 4;
+  // Groups a sentence into 4-5 word lines. Normally each group is one line/one shot,
+  // but if a sentence's last line would be an awkward orphan (< 4 words), it's merged
+  // into the previous line instead — that one shot is shown as 2 lines, which is fine.
+  const chunkWords = (words) => {
+    const n = words.length;
+    if (n === 0) return [];
+    if (n <= MAX_WORDS) return [[words]];
+    const numChunks = Math.ceil(n / MAX_WORDS);
+    const base = Math.floor(n / numChunks), rem = n % numChunks;
+    const lines = [];
+    let idx = 0;
+    for (let i = 0; i < numChunks; i++) {
+      const size = base + (i < rem ? 1 : 0);
+      lines.push(words.slice(idx, idx + size));
+      idx += size;
+    }
+    const groups = lines.map((l) => [l]);
+    if (groups.length >= 2 && groups[groups.length - 1][0].length < MIN_WORDS) {
+      const lastLine = groups.pop()[0];
+      const prevGroup = groups.pop();
+      groups.push([...prevGroup, lastLine]);
+    }
+    return groups;
+  };
+  const shots = [];
+  segs.forEach((s, si) => {
+    const isCta = si === segs.length - 1;
+    if (isCta) {
+      // CTA: keep the authored line breaks, shown as one static block for its whole duration
+      shots.push({ query: s.query, text: s.he, start: s.dstart, end: s.dend, isCta: true });
+      return;
+    }
+    const words_ = oneLine(s.he).split(' ').filter(Boolean);
+    const groups = chunkWords(words_);
+    const totalWords = words_.length || 1;
+    const segDur = s.dend - s.dstart;
+    let t = s.dstart;
+    groups.forEach((group) => {
+      const wordCount = group.reduce((a, line) => a + line.length, 0);
+      const text = group.map((line) => line.join(' ')).flatMap(wrapLineIfTooWide).join('\n');
+      const dur = segDur * (wordCount / totalWords);
+      const start = t, end = t + dur;
+      t = end;
+      shots.push({ query: s.query, text, start, end });
+    });
+  });
+
+  // fetch a Pixabay clip per shot, normalized to its exact duration. Clips are cached
+  // per search query (one API call per unique query) and cycle through the top
+  // matching results so repeated shots on the same topic don't reuse one static clip.
+  console.log('Fetching clips + building shots...');
   const listLines = [];
-  for (let i = 0; i < segs.length; i++) {
-    const s = segs[i];
-    const dur = Math.max(0.6, s.dend - s.dstart);
-    const seg = path.join(WORK, `seg${String(i).padStart(2, '0')}.mp4`);
+  const hitsCache = new Map();
+  const hitCounters = new Map();
+  for (let i = 0; i < shots.length; i++) {
+    const sh = shots[i];
+    const dur = Math.max(0.6, sh.end - sh.start);
+    const seg = path.join(WORK, `seg${String(i).padStart(3, '0')}.mp4`);
     const keyPath = seg + '.key';
-    const key = s.query + '|' + dur.toFixed(3);
+
+    if (!hitsCache.has(sh.query)) {
+      // order=popular biases toward higher-production-value, more cinematic clips
+      const api = `https://pixabay.com/api/videos/?key=${PIXABAY_KEY}&q=${encodeURIComponent(sh.query)}&per_page=50&safesearch=true&order=popular`;
+      const data = JSON.parse((await getBuf(api)).toString());
+      const hits = data.hits || [];
+      if (!hits.length) throw new Error('No Pixabay video for: ' + sh.query);
+      const qWords = sh.query.toLowerCase().split(/\s+/).filter((w) => w.length > 2);
+      const scored = hits
+        .map((h) => ({ h, score: qWords.reduce((a, w) => a + ((h.tags || '').toLowerCase().includes(w) ? 1 : 0), 0) }))
+        .sort((a, b) => b.score - a.score);
+      hitsCache.set(sh.query, scored.map((x) => x.h));
+      hitCounters.set(sh.query, 0);
+    }
+    const hits = hitsCache.get(sh.query);
+    const hitIdx = hitCounters.get(sh.query) % Math.min(hits.length, 6);
+    hitCounters.set(sh.query, hitCounters.get(sh.query) + 1);
+    const hit = hits[hitIdx];
+
+    const key = sh.query + '|' + hitIdx + '|' + dur.toFixed(3);
     listLines.push(`file '${path.basename(seg)}'`);
     if (fs.existsSync(seg) && fs.existsSync(keyPath) && fs.readFileSync(keyPath, 'utf8') === key) {
-      console.log(`  seg ${i + 1}/${segs.length} cached`);
+      console.log(`  shot ${i + 1}/${shots.length} cached`);
       continue;
     }
-    const api = `https://pixabay.com/api/videos/?key=${PIXABAY_KEY}&q=${encodeURIComponent(s.query)}&per_page=50&safesearch=true`;
-    const data = JSON.parse((await getBuf(api)).toString());
-    const hits = data.hits || [];
-    if (!hits.length) throw new Error('No Pixabay video for: ' + s.query);
-    // pick the hit whose tags best match the query words (most relevant, not just first)
-    const words = s.query.toLowerCase().split(/\s+/).filter((w) => w.length > 2);
-    let hit = hits[0], bestScore = -1;
-    for (const h of hits) {
-      const tags = (h.tags || '').toLowerCase();
-      const score = words.reduce((a, w) => a + (tags.includes(w) ? 1 : 0), 0);
-      if (score > bestScore) { bestScore = score; hit = h; }
+
+    // download each distinct source clip only once, even if reused across shots
+    const rawPath = path.join(WORK, `rawsrc_${hit.id}.mp4`);
+    if (!fs.existsSync(rawPath)) {
+      const v = hit.videos.large || hit.videos.medium || hit.videos.small;
+      fs.writeFileSync(rawPath, await getBuf(v.url));
     }
-    const v = hit.videos.large || hit.videos.medium || hit.videos.small;
-    const raw = path.join(WORK, `raw${i}.mp4`);
-    fs.writeFileSync(raw, await getBuf(v.url));
-    // slow Ken Burns zoom, alternating in / out per clip for variety
+    // slow Ken Burns zoom, alternating in / out per shot for variety
     const bigW = Math.round(W * 1.25), bigH = Math.round(H * 1.25);
-    const zExpr = (i % 2 === 0) ? 'min(1.0+0.0014*on,1.25)' : 'max(1.25-0.0014*on,1.0)';
-    ff(['-stream_loop', '-1', '-i', raw, '-t', dur.toFixed(3),
+    const zExpr = (i % 2 === 0) ? 'min(1.0+0.0018*on,1.28)' : 'max(1.28-0.0018*on,1.0)';
+    ff(['-stream_loop', '-1', '-i', rawPath, '-t', dur.toFixed(3),
       '-vf', `scale=${bigW}:${bigH}:force_original_aspect_ratio=increase,crop=${bigW}:${bigH},` +
         `zoompan=z='${zExpr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=${W}x${H}:fps=${FPS},setsar=1,format=yuv420p`,
       '-an', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '22', seg]);
     fs.writeFileSync(keyPath, key);
-    console.log(`  seg ${i + 1}/${segs.length} "${s.query}" -> ${dur.toFixed(2)}s`);
+    console.log(`  shot ${i + 1}/${shots.length} "${sh.query}" (clip #${hitIdx}) -> ${dur.toFixed(2)}s`);
   }
 
-  // 4) concat the silent video track
+  // concat the silent video track
   fs.writeFileSync(path.join(WORK, 'list.txt'), listLines.join('\n'));
   ff(['-f', 'concat', '-safe', '0', '-i', 'list.txt', '-c', 'copy', 'novoice.mp4'], WORK);
 
@@ -285,75 +390,35 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 `;
   // eye-catching captions: centered, pop-in (fade + scale) on each subtitle
   // exact screen center (H/2 = 960), \an5 middle anchor, quick fade-in.
-  // Always a single physical line of 4-6 words: each segment's sentence is split into
-  // word chunks (never more than 6 words, only fewer if the sentence is short) that
-  // are shown one after another across the segment's time window.
-  const lead = (extra) => `{\\an5\\pos(540,960)\\fad(120,60)${extra || ''}}`;
-  // emoji don't render in color in libass, so strip them from the burned text and
-  // overlay a real color emoji image separately (see the final mux below).
-  const stripEmoji = (t) => t.replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}]/gu, '');
-  const oneLine = (t) => stripEmoji(t).replace(/\n+/g, ' ').replace(/[ \t]+/g, ' ').trim();
+  // One Dialogue line per shot, at the SAME fixed font size always — no per-line
+  // auto-shrink. Usually a single 4-5 word line; a shot's text may contain an
+  // explicit line break (the CTA, or a sentence-ending remainder too short to stand
+  // as its own line) — those render as 2 lines, which is fine.
+  const lead = '{\\an5\\pos(540,960)\\fad(120,60)}';
   const rtl = (t) => '‫' + t + '‬';
-  const DEF_FONT = 68;
-  const SAFE_W = W - 240; // Def style MarginL(120) + MarginR(120)
-  const CHAR_RATIO = 0.53; // empirical avg glyph width / fontSize for Arial Bold Hebrew
-  const fitFontSize = (text) => {
-    const est = text.length * CHAR_RATIO * DEF_FONT;
-    if (est <= SAFE_W) return DEF_FONT;
-    return Math.max(30, Math.floor(SAFE_W / (text.length * CHAR_RATIO)));
-  };
-  // splits words into groups of at most `max` words, sized as evenly as possible
-  // (so a 10-word sentence becomes 5+5, a 13-word sentence becomes 5+4+4, etc.)
-  const MIN_WORDS = 4, MAX_WORDS = 6;
-  const chunkWords = (words) => {
-    const n = words.length;
-    if (n === 0) return [];
-    if (n <= MAX_WORDS) return [words];
-    const numChunks = Math.ceil(n / MAX_WORDS);
-    const base = Math.floor(n / numChunks), rem = n % numChunks;
-    const chunks = [];
-    let idx = 0;
-    for (let i = 0; i < numChunks; i++) {
-      const size = base + (i < rem ? 1 : 0);
-      chunks.push(words.slice(idx, idx + size));
-      idx += size;
-    }
-    return chunks;
-  };
-  segs.forEach((s) => {
-    const words = oneLine(s.he).split(' ').filter(Boolean);
-    const chunks = chunkWords(words);
-    const totalWords = words.length || 1;
-    const segDur = s.dend - s.dstart;
-    let t = s.dstart;
-    s._chunks = chunks.map((chunk) => {
-      const text = chunk.join(' ');
-      const dur = segDur * (chunk.length / totalWords);
-      const start = t, end = t + dur;
-      t = end;
-      return { text, start, end };
-    });
-  });
-  const capEv = segs.flatMap((s) => s._chunks.map((c) => {
-    const size = fitFontSize(c.text);
-    const sizeTag = size < DEF_FONT ? `\\fs${size}` : '';
-    return `Dialogue: 0,${tc(c.start)},${tc(c.end)},Def,,0,0,0,,${lead(sizeTag)}${rtl(c.text)}`;
-  })).join('\n');
-  // color 👇 emoji overlay during the CTA (last segment), if present
+  const capEv = shots.map((sh) => {
+    const body = sh.text.includes('\n')
+      ? stripEmoji(sh.text).split('\n').map((l) => rtl(l.trim())).join('\\N')
+      : rtl(sh.text);
+    return `Dialogue: 0,${tc(sh.start)},${tc(sh.end)},Def,,0,0,0,,${lead}${body}`;
+  }).join('\n');
+  // color 👇 emoji overlay during the CTA (last shot), if present
   const ctaSeg = segs[segs.length - 1];
   const hasPointEmoji = /\u{1F447}/u.test(ctaSeg.he || '') && fs.existsSync(path.join(ASSETS, 'emoji_point_down.png'));
-  let ctaStart = ctaSeg.dstart;
+  const lastShot = shots[shots.length - 1];
+  let ctaStart = lastShot.start;
   const emojiSize = 74;
   let emX = 0, emY = 0;
   if (hasPointEmoji) {
     fs.copyFileSync(path.join(ASSETS, 'emoji_point_down.png'), path.join(WORK, 'emoji.png'));
-    // place the emoji just past the (left/RTL) end of the CTA's last word chunk
-    const lastChunk = ctaSeg._chunks[ctaSeg._chunks.length - 1];
-    ctaStart = lastChunk.start;
-    const ctaSize = fitFontSize(lastChunk.text);
-    const estW = lastChunk.text.length * ctaSize * CHAR_RATIO;
+    // place the emoji just past the (left/RTL) end of the CTA's last physical line
+    const ctaLines = stripEmoji(lastShot.text).split('\n').map((l) => l.trim());
+    const lastLine = ctaLines[ctaLines.length - 1];
+    const lineH = 84, avgChar = DEF_FONT * CHAR_RATIO;
+    const estW = lastLine.length * avgChar;
     emX = Math.round((540 - estW / 2) - 8 - emojiSize); // emoji right edge sits just left of the line (RTL end)
-    emY = 960 - Math.round(emojiSize / 2);               // single line is vertically centered on the \pos anchor
+    const lastLineCenterY = 960 + Math.round(((ctaLines.length - 1) / 2) * lineH);
+    emY = lastLineCenterY - Math.round(emojiSize / 2);
   }
   // consistent branding: the handle sits under the logo, on screen the whole time
   const brandEv = `Dialogue: 0,${tc(0)},${tc(TOTAL)},Brand,,0,0,0,,{\\an8\\pos(540,1705)}@legacy.israel`;
