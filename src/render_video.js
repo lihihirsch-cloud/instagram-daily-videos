@@ -406,7 +406,10 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
   // calling out the key word in each line (e.g. "gold", "broken", "valuable", "scar").
   // root fragments, not exact words — Hebrew prefixes/suffixes (ל-, ב-, ו-, ה-, -ים,
   // -ה) attach directly, so "לזהב"/"השברים" need substring matching, not equality.
-  const POWER_ROOTS = ['זהב', 'יקר', 'ערך', 'צלק', 'כישל', 'חזק', 'סדק', 'שבר', 'מוסת', 'מודגש'];
+  const POWER_ROOTS = [
+    'זהב', 'יקר', 'ערך', 'צלק', 'כישל', 'חזק', 'סדק', 'שבר', 'מוסת', 'מודגש',
+    'לוותר', 'מוותר', 'שרד', 'שרוד', 'כוח', 'אומץ', 'פחד', 'כאב', 'חלום', 'נצח', 'ניצחון', 'סיפור', 'מאמין',
+  ];
   const GOLD = '&H0000D7FF';
   const highlight = (line) => line.split(' ').map((w) => {
     const bare = w.replace(/[.,!?"'׳״]/g, '');

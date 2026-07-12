@@ -526,5 +526,39 @@
     ],
     "fear": { "en": "Every time you hide a failure instead of learning from it, you throw away the gold that could have made you more valuable.", "he": "בכל פעם שאתה מסתיר כישלון במקום ללמוד ממנו, אתה זורק את הזהב שיכל להפוך אותך ליקר יותר.", "query": "hidden mask person facade" },
     "jealousy": { "en": "The people you admire most were never the ones who never broke. They were the ones who let their cracks become gold.", "he": "האנשים שאתה הכי מעריץ אף פעם לא היו אלה שלא נשברו. הם היו אלה שנתנו לסדקים שלהם להפוך לזהב.", "query": "confident successful person golden" }
+  },
+  {
+    "id": "one-day-story",
+    "caption": "יום אחד תספר את הסיפור על הרגע שבו כמעט ויתרת 🌌 שמרו את זה",
+    "hook": { "en": "One day, you are going to tell the story of how you almost gave up right before everything changed.", "he": "יום אחד תספר את הסיפור על איך כמעט ויתרת רגע לפני שהכל השתנה." },
+    "points": [
+      { "en": "No one is coming to save you, not because no one cares, but because this fight was always yours.", "he": "אף אחד לא בא להציל אותך, לא כי לא אכפת לאף אחד, אלא כי הקרב הזה תמיד היה שלך.", "query": "person alone silhouette dark" },
+      { "en": "The version of you that makes it is not stronger than you. They simply refused to stop on the worst day.", "he": "הגרסה שלך שמצליחה היא לא חזקה ממך. היא פשוט סירבה לעצור ביום הכי גרוע.", "query": "person walking storm determined" },
+      { "en": "Every person who inspires you today once sat exactly where you are sitting right now, doubting everything.", "he": "כל אדם שמעורר בך השראה היום ישב פעם בדיוק במקום שאתה נמצא בו עכשיו, מפקפק בהכל.", "query": "person sitting alone thinking window" },
+      { "en": "The pain you feel right now is not the end of your story. It is the chapter right before the turn.", "he": "הכאב שאתה מרגיש עכשיו הוא לא סוף הסיפור שלך. הוא הפרק ממש לפני התפנית.", "query": "dramatic sky storm clouds" },
+      { "en": "You do not need to see the whole staircase. You only need the courage to take the next step.", "he": "אתה לא צריך לראות את כל המדרגות. אתה צריך רק את האומץ לעשות את הצעד הבא.", "query": "person climbing stairs determined" },
+      { "en": "One day this exact struggle will be the reason someone else finds the strength to survive theirs.", "he": "יום אחד המאבק הזה בדיוק יהיה הסיבה שמישהו אחר ימצא כוח לשרוד את שלו.", "query": "helping hand support person" },
+      { "en": "The comeback is always greater than the setback, but only for the ones who refuse to stay down.", "he": "החזרה תמיד גדולה יותר מהנפילה, אבל רק בשביל אלה שמסרבים להישאר למטה.", "query": "person standing up rising strong" },
+      { "en": "Nothing you are feeling right now is permanent. Not the pain, not the doubt, not the fear.", "he": "שום דבר שאתה מרגיש עכשיו הוא לא לצמיתות. לא הכאב, לא הספק, לא הפחד.", "query": "sunrise hope new beginning" }
+    ],
+    "fear": { "en": "If you quit tonight, the story you were meant to tell the world will never get written.", "he": "אם תוותר הלילה, הסיפור שהיית אמור לספר לעולם לעולם לא ייכתב.", "query": "person giving up dark night" },
+    "jealousy": { "en": "The people living the life you dream of were never chosen. They simply refused to give up on the night it got the hardest.", "he": "האנשים שחיים את החיים שאתה חולם עליהם אף פעם לא נבחרו. הם פשוט סירבו לוותר בלילה הכי קשה.", "query": "silhouette victory sunset mountain" }
+  },
+  {
+    "id": "main-character-energy",
+    "caption": "אנרגיית דמות ראשית: זה לא איך שאתה נראה, זה איך שאתה נכנס לחדר ✨ שמרו את זה",
+    "hook": { "en": "There is a specific energy some people have where the entire room feels different the second they walk in.", "he": "יש אנרגיה ספציפית שגורמת לחדר שלם להרגיש אחרת ברגע שמישהו נכנס אליו." },
+    "points": [
+      { "en": "It is called main character energy, and it has absolutely nothing to do with looks.", "he": "קוראים לזה אנרגיית דמות ראשית, וזה לא קשור בכלל למראה החיצוני.", "query": "confident person entering room" },
+      { "en": "Main character energy means you stop asking for permission to take up space.", "he": "אנרגיית דמות ראשית זה להפסיק לבקש רשות לתפוס מקום.", "query": "confident woman walking street" },
+      { "en": "You stop shrinking your own opinions just to make everyone else comfortable.", "he": "אתה מפסיק לכווץ את הדעות שלך רק כדי שלאחרים יהיה נוח.", "query": "confident person speaking bold" },
+      { "en": "You start dressing, walking, and speaking like today actually matters.", "he": "אתה מתחיל להתלבש, ללכת ולדבר כאילו היום באמת חשוב.", "query": "stylish confident person fashion" },
+      { "en": "Side characters wait around for good things to happen. Main characters go build them.", "he": "דמויות משנה מחכות שדברים טובים יקרו. דמויות ראשיות בונות אותם בעצמן.", "query": "person building success working" },
+      { "en": "Every person with main character energy was once terrified and did it anyway.", "he": "כל אדם עם אנרגיית דמות ראשית פעם היה מפוחד ועשה את זה בכל זאת.", "query": "person overcoming fear brave" },
+      { "en": "It is not confidence that never doubts. It is confidence that shows up anyway.", "he": "זה לא ביטחון שאף פעם לא מפקפק. זה ביטחון שמופיע בכל זאת.", "query": "confident determined person portrait" },
+      { "en": "The moment you stop watching your own life happen and start directing it, everything shifts.", "he": "ברגע שאתה מפסיק לצפות בחיים שלך קורים ומתחיל לביים אותם בעצמך, הכל משתנה.", "query": "person confident success city" }
+    ],
+    "fear": { "en": "Every day you wait for permission to shine is a day someone else with main character energy takes your spot.", "he": "כל יום שאתה מחכה לרשות לזרוח הוא יום שמישהו אחר עם אנרגיית דמות ראשית לוקח את המקום שלך.", "query": "missed opportunity person waiting" },
+    "jealousy": { "en": "The people who seem unstoppable right now are not luckier than you. They simply decided to stop playing a side role in their own life.", "he": "האנשים שנראים בלתי ניתנים לעצירה עכשיו הם לא יותר בני מזל ממך. הם פשוט החליטו להפסיק לשחק תפקיד משנה בחיים של עצמם.", "query": "unstoppable confident successful person" }
   }
 ]
