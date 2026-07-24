@@ -1,9 +1,10 @@
 name: Daily Instagram Videos
 
 on:
-  schedule:
-    # 4am Israel = ~1am UTC (winter) / 2am UTC (summer) — run every 30min 0-2 UTC
-    - cron: "0,30 1,2 * * *"
+  # Automatic daily schedule disabled at Lihi's request. Manual runs via
+  # workflow_dispatch still work if she wants to trigger one by hand.
+  # schedule:
+  #   - cron: "0,30 1,2 * * *"
   workflow_dispatch:
     inputs:
       force:
